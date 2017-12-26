@@ -1,0 +1,1465 @@
+@charset "utf-8";
+
+/* base reset */
+body {color:#323232;background:#fff;text-align:left;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;outline:none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+audio,canvas,video {display:inline-block;*display:inline;*zoom:1;}
+body,button,input,select,textarea {font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",\5b8b\4f53,sans-serif;}
+input,button,select,textarea {font-size:100%;color:#636363;outline:none;}
+textarea {resize:none;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+iframe {display:block;}
+abbr,acronym {border:0;font-variant:normal;}
+del {text-decoration:line-through;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:500;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:500;}
+q:before,q:after {content:"";}
+sub,sup {font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup {top:-0.5em;}
+sub {bottom:-0.25em;}
+a {text-decoration:none;color:#0073b6;}
+a:hover {text-decoration:underline;}
+
+/* guide_ad广告通栏 */
+.guide_ad_iframe { overflow: hidden; }
+.guide_ad_iframe iframe { margin: 0 auto; }
+
+/* reset outline */
+a:focus, input:focus {outline:none;}
+input::-moz-focus-inner,button::-moz-focus-inner{outline:none;} /*for mozilla*/
+
+/* reset firefox input width */
+input::-moz-focus-inner,button::-moz-focus-inner {border:0;padding:0;}
+
+/* reset placeholder */
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#959595 !important;}
+input:-moz-placeholder,textarea:-moz-placeholder{color:#959595 !important;} /* Firefox 18- */
+input::-moz-placeholder,textarea::-moz-placeholder{color:#959595 !important;} /* Firefox 19+ */
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#959595 !important;}
+
+/* font */
+.f12 {font-size:12px;}
+.f14 {font-size:14px;}
+.f16 {font-size:16px;}
+.f18 {font-size:18px;}
+.fb {font-weight:700;}
+.fn {font-weight:500;}
+.t2 {text-indent:2em;}
+.lh18 {line-height:18px;}
+.lh24 {line-height:24px;}
+.lh28 {line-height:28px;}
+.lh36 {line-height:36px;}
+.unl {text-decoration:underline;}
+.no_unl {text-decoration:none;}
+
+/* position */
+.tl {text-align:left;}
+.tc {text-align:center;}
+.tr {text-align:right;}
+.bc {margin-left:auto;margin-right:auto;}
+.fl {float:left;display:inline;}
+.fr {float:right;display:inline;}
+.cb {clear:both;}
+.clear {clear:both;height:0;overflow:hidden;}
+.cl {clear:left;}
+.cr {clear:right;}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix {zoom:1;}
+.vm {vertical-align:middle;}
+.pr {position:relative;}
+.pa {position:absolute;}
+.zoom {zoom:1;}
+.hidden {visibility:hidden;}
+.visible {visibility:visible;}
+.none {display:none;}
+.block {display:block;}
+.inline {display:inline;}
+.hand {cursor:pointer;}
+.cdefault {cursor:default;}
+.ofhidden{overflow:hidden;}
+
+/* margin */
+.m5 {margin:5px;}
+.m8 {margin:8px;}
+.m10 {margin:10px;}
+.m15 {margin:15px;}
+.m16 {margin:16px;}
+.m20 {margin:20px;}
+.m25 {margin:25px;}
+.m30 {margin:30px;}
+.mt5 {margin-top:5px;}
+.mt-5 {margin-top:-5px;}
+.mt7 {margin-top:7px;}
+.mt8 {margin-top:8px;}
+.mt10 {margin-top:10px;}
+.mt15 {margin-top:15px;}
+.mt16 {margin-top:16px;}
+.mt20 {margin-top:20px;}
+.mt25 {margin-top:25px;}
+.mt30 {margin-top:30px;}
+.mb5 {margin-bottom:5px;}
+.mb-5 {margin-bottom:-5px;}
+.mb7 {margin-bottom:7px;}
+.mb8 {margin-bottom:8px;}
+.mb10 {margin-bottom:10px;}
+.mb15 {margin-bottom:15px;}
+.mb16 {margin-bottom:16px;}
+.mb20 {margin-bottom:20px;}
+.mb25 {margin-bottom:25px;}
+.mb30 {margin-bottom:30px;}
+.ml5 {margin-left:5px;}
+.ml8 {margin-left:8px;}
+.ml10 {margin-left:10px;}
+.ml15 {margin-left:15px;}
+.ml16 {margin-left:16px;}
+.ml20 {margin-left:20px;}
+.ml25 {margin-left:25px;}
+.ml30 {margin-left:30px;}
+.mr5 {margin-right:5px;}
+.mr8 {margin-right:8px;}
+.mr10 {margin-right:10px;}
+.mr15 {margin-right:15px;}
+.mr16 {margin-right:16px;}
+.mr20 {margin-right:20px;}
+.mr25 {margin-right:25px;}
+.mr30 {margin-right:30px;}
+.p5 {padding:5px;}
+.p8 {padding:8px;}
+.p10 {padding:10px;}
+.p15 {padding:15px;}
+.p16 {padding:16px;}
+.p20 {padding:20px;}
+.p30 {padding:30px;}
+.pt5 {padding-top:5px;}
+.pt7 {padding-top:7px;}
+.pt8 {padding-top:8px;}
+.pt10 {padding-top:10px;}
+.pt15 {padding-top:15px;}
+.pt16 {padding-top:16px;}
+.pt20 {padding-top:20px;}
+.pt30 {padding-top:30px;}
+.pb5 {padding-bottom:5px;}
+.pb7 {padding-bottom:7px;}
+.pb8 {padding-bottom:8px;}
+.pb10 {padding-bottom:10px;}
+.pb15 {padding-bottom:15px;}
+.pb16 {padding-bottom:16px;}
+.pb20 {padding-bottom:20px;}
+.pb30 {padding-bottom:30px;}
+.pl5 {padding-left:5px;}
+.pl8 {padding-left:8px;}
+.pl10 {padding-left:10px;}
+.pl15 {padding-left:15px;}
+.pl16 {padding-left:16px;}
+.pl20 {padding-left:20px;}
+.pl30 {padding-left:30px;}
+.pr5 {padding-right:5px;}
+.pr8 {padding-right:8px;}
+.pr10 {padding-right:10px;}
+.pr15 {padding-right:15px;}
+.pr16 {padding-right:16px;}
+.pr20 {padding-right:20px;}
+.pr30 {padding-right:30px;}
+
+/* font family */
+.fontTahoma {font-family:tahoma,\5b8b\4f53,sans-serif;}
+.fontArial {font-family:helvetica,arial,\5b8b\4f53,sans-serif;}
+.fontSong {font-family:\5b8b\4f53,sans-serif;}
+.fontYaHei {font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",\9ED1\4F53,\5b8b\4f53,sans-serif;}
+
+/* color */
+.cBlack {color:#323232;}
+.cGray {color:#636363;}
+.cLightgray {color:#959595;}
+.cWhite {color:#fff;}
+.cRed {color:#790000;}
+.cBlue {color:#0073b6;}
+.cGreen {color:#077345;}
+.cRed_caution {color:#ed1c24;}
+
+
+
+
+/* qyer layout*/
+.qyWrap { width:980px; margin-left:auto; margin-right:auto;}
+.qySide { width:270px;}
+.qyMain { width:680px;}
+.qyHead {}
+.qyFoot {}
+.qyContent {}
+
+/* gapline */
+.gapline20, .gapline30 { width:100%; height:1px; overflow:hidden; background-color:#ececec;}
+.gapline20 { margin:20px 0;}
+.gapline30 { margin:30px 0;}
+
+/* form */
+.ui_input { height:22px; border:1px solid #ccc; padding:0 5px; background-color:#fff; line-height:22px; font-family:Helvetica,Arial,"Hiragino Sans GB",\5b8b\4f53,sans-serif;}
+.ui_textarea { border:1px solid #ccc; padding:2px 5px; background-color:#fff; font-family:Helvetica,Arial,"Hiragino Sans GB",\5b8b\4f53,sans-serif;}
+.ui_input_focus { border-color:#096;}
+.ui_input_error { border-color:#c00;}
+.ui_select { border:1px solid #ccc; height:24px; padding-left:1px; margin:0;}
+
+/* ui_button */
+.ui_button, .ui_buttonA, .ui_buttonB, .ui_buttonC, .ui_button_disabled, .ui_button_load, .ui_button_cancel {
+	display:inline-block; height:28px; padding:0 15px; border:none; border-radius:3px; overflow:visible;
+	font-size:14px; line-height:28px; color:#fff; text-align:center; cursor:pointer;
+}
+.ui_button { background-color:#3f9f5f;}
+.ui_button:hover { background-color:#5cad77; color:#fff; text-decoration:none;}
+.ui_button:active { background-color:#3f9f5f; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+.ui_buttonB { background-color:#3f9f5f;} /* 等待废弃 */
+.ui_buttonB:hover { background-color:#5cad77; color:#fff; text-decoration:none;}
+.ui_buttonB:active { background-color:#3f9f5f; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_buttonA { background-color:#1995dd;}
+.ui_buttonA:hover { background-color:#3ba5e2; color:#fff; text-decoration:none;}
+.ui_buttonA:active { background-color:#1995dd; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_buttonC { background-color:#f26622;}
+.ui_buttonC:hover { background-color:#f5802d; color:#fff; text-decoration:none;}
+.ui_buttonC:active { background-color:#f26622; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_button_cancel { height:26px; line-height:26px; background-color:#f5f5f5; border:1px solid #c0c0c0; padding:0 14px; color:#323232;}
+.ui_button_cancel:hover { background-color:#ffffff; border-color:#959595; text-decoration:none; color:#323232;}
+.ui_button_cancel:active { background-color:#f5f5f5; border-color:#959595; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_button_disabled { height:26px; line-height:26px; border:1px solid #d7d7d7; padding:0 14px;  background-color:#eaeaea; text-decoration:none; cursor:default; color:#c0c0c0;}
+.ui_button_disabled:hover { text-decoration:none;}
+
+.ui_button_load { height:26px; padding:0 28px; line-height:26px; border:1px solid #d7d7d7; background:#fff url(//static.qyer.com/images/common/tpl/wait_16.gif) no-repeat center center; color:#999; text-indent:-200px; cursor:default;}
+.ui_button_load:hover { text-decoration:none; color:#999; cursor:default;}
+
+input.ui_button_load, input.ui_button_cancel, input.ui_button_disabled, button.ui_button_load, button.ui_button_cancel, button.ui_button_disabled { height:28px; line-height:normal;}
+
+/* button14 已废弃 */
+.ui_button14, .ui_button14A, .ui_button14_disabled, .ui_button14_load { display:inline-block; height:28px; padding:0 10px; border:none; border-radius:3px; overflow:hidden; font:bold 14px/28px helvetica,arial,\5b8b\4f53,sans-serif; color:#fff; cursor:pointer; overflow:visible;}
+.ui_button14 { background-color:#147850;}
+.ui_button14:hover { background-color:#5fa678; color:#fff; text-decoration:none;}
+.ui_button14A { background-color:#0073b6;}
+.ui_button14A:hover { background-color:#2b8fc8; color:#fff; text-decoration:none;}
+.ui_button14_disabled, .ui_button14_disabled:hover { background-color:#bcbbbb; text-decoration:none; cursor:default;}
+.ui_button14_load { height:26px; padding:0 24px; line-height:26px; border:1px solid #ccc; background:#fff url(//static.qyer.com/images/common/tpl/wait_16.gif) no-repeat center center; color:#999; text-indent:-200px; cursor:default;}
+.ui_button14_load:hover { text-decoration:none; color:#999; cursor:default;}
+
+input.ui_button14_load, button.ui_button14_load { height:28px; line-height:normal;}
+
+/* ui_btn_big */
+.ui_btn_big, .ui_btn_bigA, .ui_btn_bigC, .ui_btn_big_disabled, .ui_btn_big_load, .ui_btn_big_cancel {
+	display:inline-block; height:36px; padding:0 25px; border:none; border-radius:3px; overflow:visible;
+	font-size:18px; line-height:36px; font-family:"Hiragino Sans GB","Microsoft YaHei",\9ED1\4F53,\5b8b\4f53,sans-serif; color:#fff; text-align:center; cursor:pointer;
+}
+
+.ui_btn_big { background-color:#3f9f5f;}
+.ui_btn_big:hover { background-color:#5cad77; color:#fff; text-decoration:none;}
+.ui_btn_big:active { background-color:#3f9f5f; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_btn_bigA { background-color:#1995dd;}
+.ui_btn_bigA:hover { background-color:#3ba5e2; color:#fff; text-decoration:none;}
+.ui_btn_bigA:active { background-color:#1995dd; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_btn_bigC { background-color:#f26622;}
+.ui_btn_bigC:hover { background-color:#f5802d; color:#fff; text-decoration:none;}
+.ui_btn_bigC:active { background-color:#f26622; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_btn_big_cancel { height:34px; line-height:34px; background-color:#f5f5f5; border:1px solid #c0c0c0; padding:0 24px; color:#323232;}
+.ui_btn_big_cancel:hover { background-color:#ffffff; border-color:#959595; text-decoration:none; color:#323232;}
+.ui_btn_big_cancel:active { background-color:#f5f5f5; border-color:#959595; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_btn_big_disabled { height:34px; line-height:34px; border:1px solid #d7d7d7; padding:0 24px;  background-color:#eaeaea; text-decoration:none; cursor:default; color:#c0c0c0;}
+.ui_btn_big_disabled:hover { text-decoration:none;}
+
+.ui_btn_big_load { height:34px; padding:0 42px; line-height:34px; border:1px solid #ccc; background:#fff url(//static.qyer.com/images/common/tpl/wait_16.gif) no-repeat center center; color:#999; text-indent:-200px; cursor:default;}
+.ui_btn_big_load:hover { text-decoration:none; color:#999; cursor:default;}
+
+input.ui_btn_big_load, input.ui_btn_big_cancel, input.ui_btn_big_disabled, button.ui_btn_big_load, button.ui_btn_big_cancel, button.ui_btn_big_disabled { height:36px; line-height:normal;}
+
+/* ui_btn_small */
+.ui_btn_small, .ui_btn_smallA, .ui_btn_smallB, .ui_btn_smallC, .ui_btn_small_disabled, .ui_btn_small_load, .ui_btn_small_cancel {
+	display:inline-block; height:24px; padding:0 13px; border:none; border-radius:3px; overflow:visible;
+	font-size:12px; line-height:24px; color:#fff; text-align:center; cursor:pointer;
+}
+.ui_btn_small { background-color:#3f9f5f;}
+.ui_btn_small:hover { background-color:#5cad77; color:#fff; text-decoration:none;}
+.ui_btn_small:active { background-color:#3f9f5f; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+.ui_btn_smallB { background-color:#3f9f5f;} /* 等待废弃 */
+.ui_btn_smallB:hover { background-color:#5cad77; color:#fff; text-decoration:none;}
+.ui_btn_smallB:active { background-color:#3f9f5f; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_btn_smallA { background-color:#1995dd;}
+.ui_btn_smallA:hover { background-color:#3ba5e2; color:#fff; text-decoration:none;}
+.ui_btn_smallA:active { background-color:#1995dd; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_btn_smallC { background-color:#f26622;}
+.ui_btn_smallC:hover { background-color:#f5802d; color:#fff; text-decoration:none;}
+.ui_btn_smallC:active { background-color:#f26622; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_btn_small_cancel { height:22px; line-height:22px; background-color:#f5f5f5; border:1px solid #c0c0c0; padding:0 12px; color:#323232;}
+.ui_btn_small_cancel:hover { background-color:#ffffff; border-color:#959595; text-decoration:none; color:#323232;}
+.ui_btn_small_cancel:active { background-color:#f5f5f5; border-color:#959595; box-shadow:inset 0 2px 3px rgba(0,0,0,0.2);}
+
+.ui_btn_small_disabled { height:22px; line-height:22px; border:1px solid #d7d7d7; padding:0 12px;  background-color:#eaeaea; text-decoration:none; cursor:default; color:#c0c0c0;}
+.ui_btn_small_disabled:hover { text-decoration:none;}
+
+.ui_btn_small_load { height:22px; padding:0 24px; line-height:22px; border:1px solid #d7d7d7; background:#fff url(//static.qyer.com/images/common/tpl/wait_16.gif) no-repeat center center; color:#999; text-indent:-200px; cursor:default;}
+.ui_btn_small_load:hover { text-decoration:none; color:#999; cursor:default;}
+
+input.ui_btn_small_load, input.ui_btn_small_cancel, input.ui_btn_small_disabled, button.ui_btn_small_load, button.ui_btn_small_cancel, button.ui_btn_small_disabled { height:24px; line-height:normal;}
+
+
+
+
+/* select转div下拉菜单 */
+.dropdown { float:left;}
+.dropdown a, .dropdown a:visited { color:#636363; text-decoration:none; outline:none; font-family:arial,\5b8b\4f53,sans-serif; }
+.dropdown a:hover { color:#636363; }
+.dropdown span.value { display:none; }
+.dropdown dt a { display:block; height:22px; border:1px solid #ccc; padding:0 15px 0 5px; background:url(//static.qyer.com/images/common/select_bg.png) right 9px no-repeat; line-height:22px; }
+.dropdown dd { position:relative; z-index:9;}
+.dropdown dd ul { display:none; position:absolute; z-index:9; left:0px; top:2px; width:auto; min-width:170px; border:1px solid #ccc; background:#fff; color:#636363; }
+.dropdown dd ul li a { display:block; padding:3px 5px; }
+.dropdown dd ul li a:hover { background-color:#e6f4d9; }
+
+/* div二级下拉菜单 */
+.ui_pulldown { float:left; position:relative;}
+.ui_pulldown a, .ui_pulldown a:visited { color:#636363; text-decoration:none; outline:none; font-family:arial,\5b8b\4f53,sans-serif; }
+.ui_pulldown_tit {}
+.ui_pulldown_tit a { display:block; height:22px; border:1px solid #ccc; padding:0 15px 0 5px; background:url(//static.qyer.com/images/common/select_bg.png) right 9px no-repeat; line-height:22px; color:#636363;}
+.ui_pulldown_cnt { display:none; position:absolute; left:0; top:22px; width:auto; min-width:168px;}
+.ui_pulldown_list { border:1px solid #ccc; background:#fff; color:#636363;}
+.ui_pulldown_list_item { position:relative;}
+.ui_pulldown_list_item_current { background-color:#e6f4d9;}
+.ui_pulldown_list_item_tit { display:block; padding:3px 5px; }
+.ui_pulldown_list_item_tit:hover { background-color:#e6f4d9; }
+.ui_pulldown_sublist { display:none; position:absolute; top:-1px; left:166px; width:200px; border:1px solid #ccc; background:#fff; color:#636363;}
+.ui_pulldown_sublist_item a { display:block; padding:3px 5px;}
+.ui_pulldown_sublist_item a:hover { background-color:#e6f4d9; }
+
+/* tab */
+.ui_tab_cnt_item { display:none;}
+.ui_tab_cnt_item_current { display:block;}
+
+/* page */
+.ui_page { float:right;}
+.ui_page_item { display:inline-block; padding:0 6px; vertical-align:middle; font-size:14px; line-height:24px; color:#636363;}
+.ui_page_item:hover { background:#e0f1e1; border-radius:3px; text-decoration:none; color:#323232;}
+.ui_page_item_current, .ui_page_item_current:hover { background:#5ea67c; border-radius:3px; font-weight:700; color:#fff;}
+.ui_page_prev, .ui_page_next { font-size:12px;}
+
+.ui_page.load { position:relative;}
+.ui_page.load:after { content:''; position:absolute; left:0; top:0; right:0; bottom:0; background-color:#fff; background-color:rgba(255,255,255,0.7);}
+
+
+/* popup */
+.ui_pupBox_bg { position:absolute; z-index:1000; top:0; left:0; width:100%; height:100%; background:url(//static.qyer.com/images/common/popup_bg.png);}
+.ui_pupBox { position:relative; widows:200px; margin:100px auto 0; border:5px solid #aeadad; border-color:rgba(0,0,0,0.3); border-radius:8px;}
+.ui_pupBox_close { position:absolute; z-index:1; top:5px; right:5px; width:26px; height:26px; background:url(//static.qyer.com/images/common/tpl/pup_close.png) no-repeat 0 0; cursor:pointer;}
+.ui_pupBox_close:hover { background-position:0 -26px;}
+.ui_pupBox_main { background-color:#fff; border:1px solid #7e7e7e;}
+.ui_pupBox_head { position:relative; height:36px; padding:0 10px; border-bottom:1px solid #ddd; background:#f7f7f7 url(//static.qyer.com/images/common/tpl/pup_headbg.png) repeat-x; font-size:14px; line-height:36px; font-weight:bold;}
+.ui_pupBox_headtag { position:absolute; left:5px; bottom:-1px;}
+.ui_pupBox_headtag li { float:left; margin-right:-1px; margin-top:2px; border:1px solid #ddd; border-top:none; background-color:#fff; cursor:pointer;}
+.ui_pupBox_headtag li span { display:block; border-top:1px solid #ddd; line-height:26px; padding:0 20px;}
+.ui_pupBox_headtag li.current { margin-top:0; border-bottom-color:#fff; cursor:default;}
+.ui_pupBox_headtag li.current span { border-top:3px solid #147850; color:#145a3c;}
+.ui_pupBox_content { padding:10px; color:#636363; word-wrap:break-word; word-break:break-all;}
+.ui_pupBox_foot { height:28px; line-height:28px; padding:0 10px 10px;}
+
+/* fullpup */
+.ui_fullpupBox_bg { display:none; position:absolute; z-index:1000; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.3); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4c000000', EndColorStr='#4c000000'); overflow:auto;}
+:root .ui_fullpupBox_bg{filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000');}
+.ui_fullpupBox { position:relative; width:910px; margin:0 auto; background-color:#fff; border:1px solid #666; border-top:none; border-bottom:none; box-shadow:0 0 10px #666;}
+.ui_fullpupBox_headfix { height:36px;}
+.ui_fullpupBox_head { position:fixed; top:0; border-bottom:1px solid #ddd; box-shadow:0 0 3px #ddd; background:#fff; font-size:14px; font-weight:bold; line-height:36px; text-indent:10px;}
+.ui_fullpupBox_close { position:absolute; z-index:1; top:5px; right:5px; width:26px; height:26px; background:url(//static.qyer.com/images/common/tpl/pup_close.png) no-repeat 0 0; cursor:pointer;}
+.ui_fullpupBox_close:hover { background-position:0 -26px;}
+.ui_fullpupBox_cnt { padding:20px; font-size:14px;}
+
+/* message */
+.ui_message { position:fixed; _position:absolute; z-index:99999; top:0; left:0; width:300px; padding:11px 10px 11px 54px; border:2px solid #fff; border-radius:2px; box-shadow:1px 1px 3px #999; background:#666 url(//static.qyer.com/images/place/icon_message.png) no-repeat 0 0; text-align:center; color:#fff;}
+
+/* click_up */
+.ui_upward_wrapper { display:none; position:fixed; left:0; top:0; z-index:100; width:60px; border:1px solid #d7d7d7; box-shadow:0 0 3px rgba(0,0,0,0.15); background:#fff;}
+.ui_upward_icon { width:100%; height:25px; padding-top:53px; background:#fff url(//static.qyer.com/images/common/tpl/icon_gotop.png) no-repeat center 16px; cursor:pointer; color:#959595; text-align:center;}
+.ui_upward_icon:hover { color:#636363;}
+
+/* 意见反馈 */
+.ui_feedback { position:fixed; _position:absolute; z-index:99; top:120px; right:0;}
+.ui_feedback_icon { float:left; width:24px; height:150px; background:url(//static.qyer.com/images/common/tpl/icon_feedback.png) 0 0 no-repeat; cursor:pointer;}
+.ui_feedback_icon_current { background-position:-29px 0;}
+.ui_feedback_cnt { display:none; float:left; width:246px; height:280px; background-color:#e8e4df;}
+.ui_feedback_cnt form { padding:10px;}
+.ui_feedback_cnt textarea { width:214px; height:192px; padding:2px 5px; border:1px solid #ccc;}
+.ui_feedback_cnt input { float:right; margin-top:10px;}
+.ui_feedback_help { position:relative; top:-1px; border:1px solid #ccc; border-top:none; background:#fefdc9; height:24px; line-height:22px; text-align:center;}
+.ui_feedback_help a { font-weight:bold;}
+
+/* bbs 锦囊 */
+.ui_guide { position:fixed; _position:absolute; z-index:98; bottom:287px; right:0;}
+.ui_guide_icon { float:left; width:24px; height:240px; background:url(//static.qyer.com/images/common/bbs/ui_guide_icon.png) -25px 0 no-repeat; cursor:pointer;}
+.ui_guide_icon_current { background-position:0 0;}
+.ui_guide_item { width:160px; float:left; height:240px; position:relative; display:none;background:#fff;}
+.ui_guide_item a { display:block;}
+.ui_guide_item a:hover {text-decoration:none;}
+.ui_guide_item a .ui_guide_down_icon{background:url(//static.qyer.com/images/common/bbs/ui_down_icon.png) no-repeat;width:77px;height:77px;position:absolute;right:0;top:0;}
+.ui_guide_item a .ui_guide_down_text{position:absolute;left:0;bottom:0;line-height:28px;background:#000;display:block;width:100%;height:28px;overflow:hidden;}
+.ui_guide_item a:hover .ui_guide_down_text { background:#61a579;}
+.ui_guide_item a .ui_guide_down_text span{color:#7ebd94;font-weight:700;font-size:14px;background:url(//static.qyer.com/images/common/bbs/ui_down_sl.png) no-repeat right center; padding-right:22px;}
+.ui_guide_item a:hover .ui_guide_down_text span{color:#000;}
+
+/*city,poi层*/
+.ui_headPort { position:relative;}
+.ui_headPort_img { display:block;}
+.ui_headPort_float { display:none; position:absolute; top:-112px; left:-110px; width:260px; height:80px; padding:10px; border:1px solid #c0c0c0; background:#fff;}
+.ui_headPort_float_triangle { position:absolute; bottom:-12px; left:0; width:100%; height:12px; overflow:hidden; background:url(//static.qyer.com/images/place/triangle_down.png) no-repeat center top;}
+.ui_headPort_float_gender { position:absolute; top:8px; right:8px;}
+.ui_headPort_float_cnt { height:80px; padding-left:90px; overflow:hidden;}
+.ui_headPort_float_cnt_img { float:left; margin-left:-90px;}
+.ui_headPort_float_cnt_name { margin-top:-2px;}
+.ui_headPort_float_cnt_name_en {width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ui_headPort_float_cnt_numbers { width:170px; margin-top:15px; overflow:hidden;}
+.ui_headPort_float_cnt_numbers li { float:left; padding-right:7px; padding-left:5px; border-left:1px solid #e8e5df; line-height:14px; color:#636363;}
+.ui_headPort_float_cnt_numbers .first { padding-left:0; border-left:none;}
+.ui_headPort_float_cnt_numbers li span { display:block;}
+.ui_headPort_float_cnt_tool { padding-top:10px;}
+
+/*map_poi层*/
+.ui_map_float { display:none; position:absolute; float:left; top:-112px; left:-110px; width:300px; height:80px; padding:10px; border:1px solid #c0c0c0; background:#fff;}
+.ui_map_float_triangle { position:absolute; bottom:-9px; left:126px; width:16px; height:9px; overflow:hidden; background:url(//static.qyer.com/images/place/triangle_down.png) no-repeat 0 0;}
+.ui_map_float_cnt { float:left; height:80px; padding-left:90px; overflow:hidden; line-height:16px; color:#636363;}
+.ui_map_float_cnt_img { float:left; margin-left:-90px !important;}
+.ui_map_float_cnt_name {}
+.ui_map_float_cnt_ellipsis { width:210px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.ui_map_float_cnt_grade { height:10px; margin:10px 0;}
+
+/*map_城市,poi名称*/
+.ui_map_prompt { position:absolute; float:left; top:10px; left:400px; padding:5px 10px; background-color:rgba(0,0,0,0.6); background-color:#333\9; border-radius:4px; font-weight:bold; color:#fff;}
+
+/*user_face层*/
+.ui_face_layer { display:none; position:absolute; z-index:9999; top:0; left:0; width:328px; padding:4px; background:url(//static.qyer.com/images/common/tpl/card_bg.png);}
+.ui_face_layer_box { border:1px solid #c0c0c0; background:#fff;}
+.ui_face_layer_arrow { position:absolute; bottom:-10px; left:35px; width:20px; height:15px; overflow:hidden; background:url(//static.qyer.com/images/common/tpl/card_arrow.png) no-repeat 0 0;}
+.arrow_t { top:-10px; background-position:0 -13px;}
+.ui_face_layer_gender { position:absolute; top:16px; right:16px;}
+.ui_face_layer_cnt { padding:10px 10px 10px 100px; height:80px; overflow:hidden;}
+.ui_face_layer_cnt_img { float:left; margin-left:-90px;}
+.ui_face_layer_name { margin-top:-2px; font-weight:bold;}
+.ui_face_layer_address { height:18px; color:#636363;}
+.ui_face_layer_number { padding-top:9px;}
+.ui_face_layer_number li { float:left; width:72px; line-height:20px;}
+.ui_face_layer_number .digit { margin-left:5px; font-weight:bold; color:#636363;}
+.ui_face_layer_sign {padding:0 10px 10px 46px;}
+.ui_face_layer_signtit {float:left;display:inline;margin-left:-36px;}
+.ui_face_layer_signtxt {width:100%;word-wrap:break-word;word-break:break-all;}
+.ui_face_layer_tool { height:20px; padding:8px 10px; background-color:#f0efef; text-align:right;}
+
+/*delete删除层*/
+.ui_delete { display:none; position:absolute; z-index:9999; left:0; top:0; width:160px; box-shadow:0 1px 5px rgba(0,0,0,0.2);}
+.ui_delete_box { padding:10px; border:1px solid #c0c0c0; background-color:#fff; text-align:center;}
+.ui_delete_btns { padding-top:15px;}
+.ui_delete_btns .ui_button_cancel { margin-right:6px;}
+
+/*torst提醒层*/
+.ui_coast { display:none; position:absolute; z-index:99999; width:360px; padding:0 15px; border:6px solid rgba(0,0,0,0.2); border:6px solid #ccc\0; *border:6px solid #ccc; border-radius:5px; background-color:#fff;background-clip:padding-box;}
+:root .ui_coast { border:6px solid rgba(0,0,0,0.2);}
+.ui_coast_cnt { line-height:34px; padding:8px 0;}
+.ui_coast_img { float:left; margin-right:10px;}
+.ui_coast_num { margin-left:44px; border-top:1px dotted #e2e2e2;}
+.ui_coast_num li { float:right; line-height:36px; margin-left:20px;}
+.ui_coast_num li span { font-size:24px; color:#ff3300; vertical-align:middle;}
+
+/*icon信息提示*/
+.icon_finish, .icon_error, .icon_warn, .icon_info, .icon_doubt { display:inline-block; padding-left:20px; background:url(//static.qyer.com/images/common/tpl/icon_word.png) no-repeat 0 0;}
+/*finish完成*/
+.icon_finish { background-position:0 1px;}
+/*error错误*/
+.icon_error { background-position:0 -19px; color:#c00;}
+/*warn警告*/
+.icon_warn { background-position:0 -39px;}
+/*info信息*/
+.icon_info { background-position:0 -59px;}
+/*doubt疑问*/
+.icon_doubt { background-position:0 -79px;}
+
+/*prompt提醒*/
+.ui_prompt { display:none; position:absolute; float:left; left:0; top:0; border:1px solid #ffd088; padding:3px 9px; background:#ffffe5; line-height:18px;}
+.ui_prompt_awtop, .ui_prompt_awbtm { position:absolute; left:20px; width:9px; height:6px; overflow:hidden; background:url(//static.qyer.com/images/common/tpl/prompt_aw.png) no-repeat;}
+.ui_prompt_awtop { top:-6px;}
+.ui_prompt_awbtm { bottom:-6px; background-position:0 -10px;}
+
+/* 性别gend */
+.icon_gender_man, .icon_gender_woman { display:block; width:16px; height:15px; overflow:hidden; background:url(//static.qyer.com/images/place/icon_gender.png) no-repeat;}
+.icon_gender_man { background-position:0 -20px;}
+.icon_gender_woman { background-position:0 0;}
+
+/* new gender */
+.icon_gender_he, .icon_gender_she { display:inline-block; width:16px; height:16px; overflow:hidden; background:url(//static.qyer.com/images/common/tpl/icon_gender.png) no-repeat;}
+.icon_gender_he { background-position:-16px 0;}
+.icon_gender_she { background-position:0 -16px;}
+
+/* 赞 */
+.icon_praise { background:url(//static.qyer.com/images/place/icon_praise.png) no-repeat 0 2px; padding-left:15px;}
+
+/* 积分18*18 */
+.icon_grade18, .icon_grade18_half, .icon_grade18_null { float:left; width:18px; height:18px; overflow:hidden; padding-right:2px; background:url(//static.qyer.com/images/place/icon_grade.png) no-repeat;}
+.icon_grade18 { background-position:0 0;}
+.icon_grade18_half { background-position:0 -23px;}
+.icon_grade18_null { background-position:0 -46px;}
+
+/* 积分10*10 */
+.icon_grade10, .icon_grade10_half, .icon_grade10_null { display:inline-block; width:10px; height:10px; overflow:hidden; padding-right:1px; background:url(//static.qyer.com/images/place/icon_grade.png) no-repeat;}
+.icon_grade10 { background-position:0 -69px;}
+.icon_grade10_half { background-position:0 -84px;}
+.icon_grade10_null { background-position:0 -99px;}
+
+/*加关注、发私信*/
+.icon_user_care, .icon_user_care_already, .icon_user_care_cancel, .icon_user_care_mutual, .icon_user_email { display:inline-block; width:58px; height:20px; overflow:hidden; background:url(//static.qyer.com/images/place/icon_user_tool.png) no-repeat; line-height:200px;}
+.icon_user_care { background-position:0 0;}
+.icon_user_care_already { background-position:0 -25px;}
+.icon_user_care_cancel { background-position:0 -50px;}
+.icon_user_care_mutual { background-position:0 -75px;}
+.icon_user_email { background-position:-63px 0;}
+
+/*控件：回复列表_显示更多*/
+.ui_remore { height:32px; background-color:#f5f4ef; text-align:center; line-height:32px; color:#636363; cursor:pointer;}
+.ui_remore:hover { background-color:#f8f7f4;}
+
+/*控件：回复列表_加载中*/
+.ui_reload { height:32px; background-color:#f8f7f4; text-align:center; line-height:32px; color:#ccc; cursor:pointer;}
+
+/* ask_tag */
+.ask_tag{display:inline-block;line-height:18px;color:#077345;background:url(//static.qyer.com/images/common/tpl/tag_ask.png) no-repeat 0 0;_background:#e6f4d9;margin:5px 0;padding-left:10px;}
+.ask_tag:hover{background:url(//static.qyer.com/images/common/tpl/tag_ask.png) no-repeat 0 -18px;_background:#077345;color:#fff;text-decoration:none;}
+.ask_tag .ask_tag_strong{display:inline-block;padding:0 10px 0 0;background:url(//static.qyer.com/images/common/tpl/tag_ask.png) no-repeat right -36px;_background:#e6f4d9;white-space:nowrap;font-family:\5b8b\4f53,sans-serif;}
+.ask_tag:hover .ask_tag_strong{background:url(//static.qyer.com/images/common/tpl/tag_ask.png) no-repeat right -54px;_background:#077345;}
+
+/* 用户关注 私信 */
+.ui_private_btn { font-family:\5b8b\4f53,sans-serif; background:#fcfcfc url(//static.qyer.com/images/user2/private_icon.png) no-repeat 8px center; line-height:22px; border:1px solid #d9d9d9; border-radius:3px; color:#323232; padding:0 8px 0 27px; box-shadow:0 1px 1px rgba(0,0,0,0.1); display:inline-block;}
+.ui_private_btn:hover { border:1px solid #d7d7d7; background-color:#fff; text-decoration:none;}
+.ui_private_btn:active { border:1px solid #c0c0c0; background-color:#f5f8f6; box-shadow:0 1px 1px rgba(0,0,0,0.1) inset;}
+.ui_attent_btn { background:url(//static.qyer.com/images/user2/attent_icon.png) no-repeat -90px 0; display:inline-block; height:24px; text-indent:-9999px; cursor:pointer; width:60px; vertical-align:middle;}
+.ui_attent_btn:hover { background-position:-90px -24px;}
+.ui_attent_btn:active { background-position:-90px -48px;}
+.ui_attent_btn_yes { background-position:-90px -72px; width:73px;}
+.ui_attent_btn_yes:hover { background-position:-90px -120px; width:67px;}
+.ui_attent_btn_yes:active { background-position:-90px -144px; width:67px;}
+.ui_attent_btn_each { background-position:-90px -96px; width:85px;}
+.ui_attent_btn_each:hover { background-position:-90px -120px; width:67px;}
+.ui_attent_btn_each:active { background-position:-90px -144px; width:67px;}
+
+/*筛选排序*/
+.ui_sort { color:#636363;}
+.ui_sort_title { margin-right:10px;}
+.ui_sort_item {}
+.ui_sort_item_current { color:#636363; font-weight:bold;}
+.ui_sort_gap { padding:0 8px;}
+
+/*文本框高度自适应*/
+#auto_text_shadow, .auto_text { overflow:hidden;}
+#auto_text_shadow { position:absolute; left:0; bottom:0; border-width:0px; padding:0px; visibility:hidden; }
+
+/*组件：文本输入框*/
+.mod_edittext {}
+.mod_edittext .ui_input { width:545px;}
+.mod_edittext .ui_textarea { width:545px; height:72px; min-height:72px;}
+.mod_edittext_btn { margin-top:10px;}
+.mod_edittext_wordnb { display:none; color:#636363;}
+.mod_edittext_transpond { line-height:28px;}
+.mod_edittext_transpond label { margin-right:10px;}
+.mod_edittext_transpond input { margin-right:3px;}
+
+/*组件：评论(回复)*/
+.mod_discuss { width:670px; margin-bottom:10px;}
+.mod_discuss .ui_reload, .mod_discuss .ui_remore { margin-top:5px;}
+.mod_discuss .operate { display:none;}
+.mod_discuss_face { float:left; display:inline; width:80px; height:80px;}
+.mod_discuss_cnt { position:relative; float:right; display:inline; width:577px;}
+.mod_discuss_cnt_triangle { position:absolute; left:-8px; top:16px; width:0px;height:0px;line-height:0px;border-right:8px solid #f5f4f0;border-top:8px solid #fff;border-bottom:8px solid #fff;}
+.mod_discuss_box { padding:5px 10px; background-color:#f5f4ef;}
+.mod_discuss_box_name { color:#636363;}
+.mod_discuss_box_text { padding:2px 0 8px;word-wrap:break-word;word-break:break-all;}
+.mod_discuss_box_tool { padding:4px 0 2px; border-top:1px dotted #e2e2e2;}
+.mod_discuss_box .icon_discuss { padding-left:20px; background:url(//static.qyer.com/images/common/tpl/icon_discuss.png) no-repeat 0 2px;}
+.mod_discuss_box .icon_discuss span { padding-right:12px; background:url(//static.qyer.com/images/common/tpl/icon_discuss.png) no-repeat right -16px;}
+.mod_discuss_box .icon_discuss span.openup { padding-right:12px; background:url(//static.qyer.com/images/common/tpl/icon_discuss.png) no-repeat right -39px;}
+.mod_discuss_reply { display:none;}
+.mod_discuss_reply .ui_textarea { height:18px; min-height:18px;}
+.mod_discuss_reply_item { min-height:48px; margin-top:5px; background-color:#f5f4f0;}
+.mod_discuss_reply_face { float:left; display:inline; width:48px; height:48px;}
+.mod_discuss_reply_box { margin-left:58px; padding:5px 10px 5px 0;}
+.mod_discuss_reply_box_name { color:#636363;}
+.mod_discuss_reply_box_text { padding-top:2px;word-wrap:break-word;word-break:break-all;}
+.mod_discuss_reply_post { padding:10px; margin-top:5px; background-color:#f5f4f0;}
+.mod_discuss_speak { padding:10px; background-color:#f5f4ef;}
+
+/*组件：评论(简版)*/
+.mod_discuss_brief_all {border-bottom:1px solid #E8E5DF; margin:10px 0 5px; line-height:24px; text-align:right; color:#636363;}
+
+
+/*全站分享按钮*/
+.jiathis_style_title { color:#959595; margin-right:5px;}
+body .jiathis_style { padding-top:1px;}
+body .jiathis_style a {float:left; margin-left:10px;}
+body .jiathis_style a:first-child { margin-left:0;}
+body .jiathis_style .jtico {padding-left:16px !important; background:url(//static.qyer.com/images/common/tpl/share16.png) no-repeat left center;}
+body .jiathis_style .jtico_tsina { background-position:0 0;}
+body .jiathis_style .jtico_tqq { background-position:-26px 0;}
+body .jiathis_style .jtico_qzone { background-position:-52px 0;}
+body .jiathis_style .jtico_renren { background-position:-78px 0;}
+body .jiathis_style .jtico_douban { background-position:-104px 0;}
+body .jiathis_style .jtico_weixin {}
+
+body .jiathis_style_24x24 {}
+body .jiathis_style_24x24 a {float:left; margin-left:10px;}
+body .jiathis_style_24x24 a:first-child { margin-left:0;}
+body .jiathis_style_24x24 .jtico {padding-left:24px !important; background:url(//static.qyer.com/images/common/tpl/share25.png) no-repeat left center;}
+body .jiathis_style_24x24 .jtico_tsina { background-position:0 0;}
+body .jiathis_style_24x24 .jtico_tqq { background-position:-34px 0;}
+body .jiathis_style_24x24 .jtico_qzone { background-position:-68px 0;}
+body .jiathis_style_24x24 .jtico_renren { background-position:-102px 0;}
+body .jiathis_style_24x24 .jtico_douban { background-position:-136px 0;}
+body .jiathis_style_24x24 .jtico_weixin { background-position:-170px 0;}
+
+
+/*新版用户名片20130812*/
+.ui_usercard { position: absolute; top: 0; left: 0; width: 298px; border: 1px solid #c0c0c0; background-color:#fff; color:#636363; box-shadow:0 1px 1px rgba(0,0,0,0.1);}
+.ui_usercard_top {position: relative;}
+.ui_usercard_img {width: 100%;}
+.ui_usercard_userinfo {position: absolute; left: 0; top:67px; padding-left:90px;}
+.ui_usercard_userinfo .face { float:left; margin-left:-70px;}
+.ui_usercard_userinfo .face img { display:block; border-radius:50%;}
+.ui_usercard_userinfo .name { padding-top:4px; font-size:18px; line-height:20px;}
+.ui_usercard_userinfo .name a { color:#fff;}
+.ui_usercard_userinfo .name a:hover { text-decoration:none;}
+.ui_usercard_userinfo .btns { padding-top:13px;}
+.ui_usercard_userinfo .btns a { margin-right:5px;}
+.ui_usercard_grade { padding-top:40px; margin-bottom:20px; text-align:center; line-height:14px;}
+.ui_usercard_grade span { margin-left:20px;}
+.ui_usercard_grade span:first-child { margin-left:0;}
+.ui_usercard_intro { margin:-3px 0 17px; padding:0 5px; text-align:center;}
+.ui_usercard_intro p { display:inline-block; padding-left:25px; background:url(//static.qyer.com/images/common/tpl/usercard_quote_l.png) no-repeat 0 0;}
+.ui_usercard_intro span { display:inline-block; padding-right:25px; background:url(//static.qyer.com/images/common/tpl/usercard_quote_r.png) no-repeat right bottom; text-align:left; word-break:break-all; word-wrap:break-word;}
+.ui_usercard_nums { margin-bottom:20px; text-align:center;}
+.ui_usercard_nums li { display:inline-block; line-height:20px; padding-left:32px; background:url(//static.qyer.com/images/common/tpl/usercard_numgap.png) no-repeat 16px center;}
+.ui_usercard_nums li:first-child { padding-left:0; background:none;}
+.ui_usercard_nums em { margin-right:5px; font-size:18px; font-style:italic;}
+.ui_usercard_nums em a { color:#636363;}
+.ui_usercard_nums em a:hover { color:#0073b6; text-decoration:none;}
+.ui_usercard_medals { margin-bottom:20px; text-align:center;}
+.ui_usercard_medals span { margin-left:15px;}
+.ui_usercard_medals span:first-child { margin-left:0;}
+
+
+
+/*文本输入框下方分享按钮*/
+.ui_textboxShare { padding:2px 0; line-height:24px;}
+.ui_textboxShare .title { float:left;}
+.ui_textboxShare label { float:left; margin-left:10px;}
+.ui_textboxShare label.weibo { margin-left:0;}
+.ui_textboxShare input { margin-right:10px; vertical-align:middle;}
+.ui_textboxShare .icon { display:inline-block; width:24px; height:24px; overflow:hidden; background:url(//static.qyer.com/images/common/tpl/textbox_share.png) no-repeat 0 0; vertical-align: middle;}
+.ui_textboxShare label.weibo .icon { background-position:0 0;}
+.ui_textboxShare label.qzone .icon { background-position:-30px 0;}
+.ui_textboxShare label.weibo .iconnull { background-position:0 -30px;}
+.ui_textboxShare label.qzone .iconnull { background-position:-30px -30px;}
+
+.ui_textboxShareSmall { padding:4px 0; line-height:16px;}
+.ui_textboxShareSmall input { margin-right:3px;}
+.ui_textboxShareSmall .icon { width:16px; height:16px;}
+.ui_textboxShareSmall label.weibo .icon { background-position:0 -60px;}
+.ui_textboxShareSmall label.qzone .icon { background-position:-30px -60px;}
+.ui_textboxShareSmall label.weibo .iconnull { background-position:0 -90px;}
+.ui_textboxShareSmall label.qzone .iconnull { background-position:-30px -90px;}
+
+.borderbox{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+
+@charset "utf-8";
+
+/*CSS reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:"";}
+abbr,acronym {border:0;}
+
+/* reset outline */
+a:focus, input:focus {outline:none;}
+input::-moz-focus-inner,button::-moz-focus-inner{outline:none;} /*for mozilla*/
+
+/* reset firefox input width */
+input::-moz-focus-inner,button::-moz-focus-inner {border:0;padding:0;}
+
+/* reset placeholder */
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#959595 !important;}
+input:-moz-placeholder,textarea:-moz-placeholder{color:#959595 !important;} /* Firefox 18- */
+input::-moz-placeholder,textarea::-moz-placeholder{color:#959595 !important;} /* Firefox 19+ */
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#959595 !important;}
+
+
+/* head */
+.qyer_header_fixed { height:40px;}
+.qyer_header_bg { z-index:999; _position:static; left:0; top:0; width:100%; min-width:960px; border-bottom:2px solid #72b088; background:#147850; text-align:left; font:12px/1.5 helvetica,arial,"hiragino sans gb","\5b8b\4f53",sans-serif; color:#323232; clear:both; box-shadow:0 2px 2px rgba(0, 0, 0, 0.2);}
+.qyer_header { width:960px; height:38px; margin:0 auto;}
+.qyer_header a {text-decoration:none;color:#0073b6;}
+.qyer_header a:hover {text-decoration:underline;}
+
+
+/* logo */
+.qyer_head_logo { float:left; width:110px;}
+
+
+/* nav */
+.qyer_head_nav { float:left; width:480px;}
+.qyer_head_nav_item { float:left; margin-top:2px;}
+.qyer_head_nav_item_tit { display:block; height:34px; padding:0 12px; line-height:34px; overflow:hidden; font-family:"Hiragino Sans GB","Microsoft YaHei",\9ED1\4F53,\5b8b\4f53,sans-serif; font-size:17px; color:#e0f1df !important; text-align:center;}
+.qyer_head_nav_item_tit:hover { text-decoration:none !important; color:#fff !important; border-bottom:2px solid #74b089;}
+
+#qyer_head_nav_item_lastm { position:relative;}
+#qyer_head_nav_item_lastm:after { content:''; position:absolute; right:-4px; top:-2px; width:22px; height:16px; overflow:hidden; background:url(//static.qyer.com/images/common/head/nav-hot.png) no-repeat; line-height:200px;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+	#qyer_head_nav_item_lastm::after { background:url(//static.qyer.com/images/common/head/nav-hot@2x.png) no-repeat; background-size:100% 100%;}
+}
+
+#qyer_head_nav_item_plan { position:relative;}
+#qyer_head_nav_item_plan:after { content:''; position:absolute; right:-4px; top:-2px; width:22px; height:16px; overflow:hidden; background:url(//static.qyer.com/images/common/head/nav-plan.png) no-repeat; line-height:200px;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+	#qyer_head_nav_item_plan::after { background:url(//static.qyer.com/images/common/head/nav-plan@2x.png) no-repeat; background-size:100% 100%;}
+}
+
+/*#qyer_head_nav_item_hotel { position:relative;}
+#qyer_head_nav_item_hotel:after { content:''; position:absolute; right:-4px; top:-2px; width:20px; height:16px; overflow:hidden; background:url(//static.qyer.com/images/common/head/nav-fan.png) no-repeat; line-height:200px;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi) {
+	#qyer_head_nav_item_hotel::after { background:url(//static.qyer.com/images/common/head/nav-fan@2x.png) no-repeat; background-size:100% 100%;}
+}*/
+
+.qyer_head_nav_item_this .qyer_head_nav_item_tit { border-bottom:2px solid #74b089; color:#fff !important;}
+
+.qyer_head_nav_item_sns, .qyer_head_nav_item_yd { position:relative; padding:0 21px 0 12px;}
+.qyer_head_nav_item_sns:after, .qyer_head_nav_item_yd:after { position:absolute; top:14px; right:12px; content:""; width:0; height:0; overflow:hidden; border:4px solid transparent; border-top-color:#e0f1df; border-bottom-width:0;}
+.qyer_head_nav_item_current { position:relative; z-index:999;}
+.qyer_head_nav_item_current .qyer_head_nav_item_sns, .qyer_head_nav_item_current .qyer_head_nav_item_yd { border:1px solid #d9d9d9; padding:0 20px 0 11px; border-bottom:none; border-top-left-radius:5px; border-top-right-radius:5px; background:#fff; color:#147850 !important;}
+.qyer_head_nav_item_current .qyer_head_nav_item_sns:after, .qyer_head_nav_item_current .qyer_head_nav_item_yd:after { border-top-color:#147850;}
+
+
+/* subnav */
+.qyer_head_subnav_bg { display:none; width:142px; position:absolute; right:0; top:34px; background:#fff; border:1px solid #d9d9d9; border-radius:5px; box-shadow:0 0 1px rgba(0,0,0,0.15);}
+.qyer_head_subnav_top { position:absolute; top:-2px; right:-1px; width:65px; height:5px; overflow:hidden; background:#fff; border-right:1px solid #d9d9d9;}
+.qyer_head_subnav_list { padding:8px;}
+.qyer_head_subnav_list li { font-size:14px;}
+.qyer_head_subnav_list a { display:block; height:30px; padding-left:39px; line-height:30px; color:#147850; background-repeat:no-repeat; border-radius:2px;}
+.qyer_head_subnav_list a:hover { background-color:#74b089; color:#fff; text-decoration:none;}
+
+
+#qyer_head_nav_item_sns .qyer_head_subnav_list a { background-image:url(//static.qyer.com/images/common/head/head_snsnav3.png);}
+
+.qyer_head_nav_item_bbs { background-position:5px 0;}
+.qyer_head_nav_item_ask { background-position:5px -30px;}
+.qyer_head_nav_item_mguide { background-position:5px -240px;}
+.qyer_head_nav_item_qlab { background-position:5px -180px;}
+
+.qyer_head_nav_item_bbs:hover { background-position:5px -90px;}
+.qyer_head_nav_item_ask:hover { background-position:5px -120px;}
+.qyer_head_nav_item_mguide:hover { background-position:5px -270px;}
+.qyer_head_nav_item_qlab:hover { background-position:5px -210px;}
+
+
+#qyer_head_nav_item_yd .qyer_head_subnav_list a { background-image:url(//static.qyer.com/images/common/head/head_ydnav3.png);}
+
+.qyer_head_nav_item_plane { background-position:8px 0;}
+.qyer_head_nav_item_insure { background-position:8px -30px;}
+.qyer_head_nav_item_visa { background-position:8px -60px;}
+.qyer_head_nav_item_hoteldeal { background-position:8px -90px;}
+.qyer_head_nav_item_shop { background-position:8px -120px;}
+.qyer_head_nav_item_liner { background-position:8px -150px;}
+.qyer_head_nav_item_car { background-position:8px -180px;}
+.qyer_head_nav_item_airbnb { background-position:8px -210px;}
+
+.qyer_head_nav_item_plane:hover { background-position:-269px 0;}
+.qyer_head_nav_item_insure:hover { background-position:-269px -30px;}
+.qyer_head_nav_item_visa:hover { background-position:-269px -60px;}
+.qyer_head_nav_item_hoteldeal:hover { background-position:-269px -90px;}
+.qyer_head_nav_item_shop:hover { background-position:-269px -120px;}
+.qyer_head_nav_item_liner:hover { background-position:-269px -150px;}
+.qyer_head_nav_item_car:hover { background-position:-269px -180px;}
+.qyer_head_nav_item_airbnb:hover { background-position:-269px -210px;}
+
+
+/* search */
+.qyer_head_search { position:relative; *z-index:998; float:right; width:175px; height:28px; margin-top:5px; background:#fff; }
+.qyer_head_search_input { float:left; width:131px; height:18px; padding:5px 8px; border:none; background:transparent; font-size:12px; line-height:18px; }
+.qyer_head_search_btn { float:left; width:28px; height:28px; border:0; background:none; cursor:pointer; overflow:hidden; text-indent:-100px; background:url(//static.qyer.com/images/common/head/head_search.png) no-repeat 0 0; background:url(//static.qyer.com/images/common/head/head_search_small.png) no-repeat 0 0\9; background-size:28px 28px;}
+.qyer_head_search_btn:hover { background:url(//static.qyer.com/images/common/head/head_search_hv.png) no-repeat 0 0; background:url(//static.qyer.com/images/common/head/head_search_small_hv.png) no-repeat 0 0\9; background-size:28px 28px;}
+
+.qyer_head_search_drop { display:none; position:absolute; z-index:998; left:0; top:28px; width:268px; border:1px solid #ccc; background-color:#fff; box-shadow:1px 1px 3px rgba(0, 0, 0, 0.3);}
+.qyerHeadSearchDropList {}
+.qyerHeadSearchDropList li { border-top:1px solid #ececec;}
+.qyerHeadSearchDropList li:first { border-top:none;}
+.qyerHeadSearchDropList a { display:block; color:#323232;}
+.qyerHeadSearchDropList a:hover, .qyerHeadSearchDropList a.current { background-color:#e6f4d9; text-decoration:none;}
+.qyerHeadSearchDropList .item a { height:36px; padding:7px 10px 7px 50px;}
+.qyerHeadSearchDropList .item .related { font-weight:bold; color:#007345;}
+.qyerHeadSearchDropList .item .pic { float:left; margin:3px 0 0 -40px;}
+.qyerHeadSearchDropList .item .face { border-radius:50%;}
+.qyerHeadSearchDropList .item .title { width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.qyerHeadSearchDropList .item .info { color:#636363;}
+.qyerHeadSearchDropList .item2 a { padding:0 10px; line-height:32px; font-weight:bold;}
+.qyerHeadSearchDropList .item2 .related { font-weight:normal;}
+
+
+/* login */
+.qyer_head_login { float:right; width:195px; padding-top:4px;}
+.qyer_head_login_entry { padding-top:7px; height:16px; line-height:16px; color:#fff;}
+.qyer_head_login_entry li { float:right; margin-left:10px;}
+.qyer_head_login_entry li img { display:block;}
+.qyer_head_login_entry a { color:#fff;}
+.qyer_head_login_entry a:hover { color:#e0f1df; text-decoration:none;}
+
+
+/*user*/
+.qyer_head_users { position:relative; *z-index:999; float:left; width:125px; padding:5px 0;}
+.qyer_head_username { position:relative; float:right; padding-right:14px; line-height:20px; color:#e0f1df !important;}
+.qyer_head_username:hover { color:#fff !important; text-decoration:none !important;}
+.qyer_head_username .arrow { position:absolute; top:7px; right:0; width:0; height:0; overflow:hidden; border:4px solid transparent; border-top-color:#e0f1df; border-bottom-width:0;}
+.qyer_head_userlayer { position:absolute; z-index:999; right:-70px; top:30px; float:left; width:240px;}
+.qyer_head_userlayer .arrow { position:absolute; right:90px; top:-6px;width:0; height:0; overflow:hidden; border:6px solid transparent; border-bottom-color:#5fa678; border-top-width:0; }
+.qyer_head_userlayer .infos { width:158px; overflow:hidden; padding:10px 10px 10px 72px; background:#5fa678;}
+.qyer_head_userlayer .infos a { color:#fff;}
+.qyer_head_userlayer .infos a:hover { text-decoration:none;}
+.qyer_head_userlayer .infos .face { float:left; margin-left:-62px; border:2px solid #fff; border-radius:50%; overflow:hidden;}
+.qyer_head_userlayer .infos .face img { display:block; border-radius:50%;}
+.qyer_head_userlayer .infos .name { font-size:14px; line-height:28px;}
+.qyer_head_userlayer .infos .txt { padding:3px 0 0; border:0; background:none; height:auto;}
+.qyer_head_userlayer .infos .txt a { margin-right:20px;}
+.qyer_head_userlayer .list { border:1px solid #c0c0c0; border-top:none; background:#fff;}
+.qyer_head_userlayer .list li { position:relative; height:34px; border-top:1px solid #d7d7d7; line-height:34px;}
+.qyer_head_userlayer .list li:first-child { border-top:none;}
+.qyer_head_userlayer .list .link { display:block; width:218px; padding:0 10px; font-size:14px; color:#323232;}
+.qyer_head_userlayer .list .link:hover { background:#e0f1df; text-decoration:none;}
+.qyer_head_userlayer .list .sublink { position:absolute; right:10px; top:0;}
+.qyer_head_userlayer .list .btm { padding:0 10px; background:#f5f5f5;}
+.qyer_head_userlayer .list .quit { color:#323232;}
+.qyer_head_userlayer .list .set { position:absolute; top:8px; right:10px; display:block; height:16px; line-height:16px; padding-right:16px; background:url(//static.qyer.com/images/common/head/head_user_set.png) no-repeat right top;}
+.qyer_head_userlayer .list .set span { display:none; color:#323232;}
+.qyer_head_userlayer .list .set:hover { background-position:right bottom; text-decoration:none;}
+.qyer_head_userlayer .list .set:hover span { display:inline-block; padding-right:6px;}
+
+
+/*message*/
+.qyer_head_msgs { position:relative; *z-index:999; float:left; width:70px;}
+.qyer_head_msg { float:right; margin-top:3px; line-height:24px; color:#e0f1df; cursor:default;}
+.qyer_head_msg em { float:left;}
+.qyer_head_msg .num { float:left; width:28px; padding-left:4px; height:24px; background:url(//static.qyer.com/images/common/head/head_msg_num.png) no-repeat; text-align:center; color:#fff;}
+.qyer_head_msg:hover { color:#fff;}
+.qyer_head_msglayer { position:absolute; z-index:999; right:0; top:30px; width:298px; border:1px solid #c0c0c0; background:#fff;}
+.qyer_head_msglayer .tabs { width:100%; height:35px;}
+.qyer_head_msglayer .tabs li { float:left; width:149px; background:#f5f5f5; font-size:14px; line-height:34px; text-align:center; cursor:pointer;}
+.qyer_head_msglayer .tabs li:first-child { width:148px; border-right:1px solid #d7d7d7;}
+.qyer_head_msglayer .tabs span { display:block; border-bottom:1px solid #d7d7d7;}
+.qyer_head_msglayer .tabs .arrow1 { position:absolute; right:6px; top:-7px;width:0; height:0; overflow:hidden; border:6px solid transparent; border-bottom-color:#d7d7d7; border-top-width:0; }
+.qyer_head_msglayer .tabs .arrow2 { position:absolute; right:6px; top:-6px;width:0; height:0; overflow:hidden; border:6px solid transparent; border-bottom-color:#f5f5f5; border-top-width:0; }
+.qyer_head_msglayer .tabs .current { background:#fff; cursor:default;}
+.qyer_head_msglayer .tabs .current span { border-bottom:none;}
+.qyer_head_msglayer .tabs .current .arrow2 { border-bottom-color:#fff;}
+.qyer_head_msglayer .list {}
+.qyer_head_msglayer .list li { padding:7px 15px; border-bottom:1px solid #d7d7d7; word-break:break-all; word-wrap:break-word;}
+.qyer_head_msglayer .list li a { display:block; max-height:36px; overflow:hidden;}
+.qyer_head_msglayer .list .tit {width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.qyer_head_msglayer .list .datetime { color:#959595;}
+.qyer_head_msglayer .list .looked { color:#959595;}
+.qyer_head_msglayer .list .looked a { color:#959595;}
+.qyer_head_msglayer .lists .all { padding:7px 10px; background:#f5f5f5; text-align:right;}
+.qyer_head_msglayer .lists .all a { color:#323232;}
+.qyer_head_msglayer .lists .noinfo { line-height:80px; text-align:center; color:#959595; border-bottom:1px solid #d7d7d7;}
+
+
+/*旧版*/
+.qyer_head_new { float:right; position:relative; z-index:998; width:18px; height:30px; margin-left:20px;}
+.qyer_head_new_icon { display:block; height:30px; background:url(//static.qyer.com/images/common/head/head_new.png) no-repeat 0 6px; overflow:hidden; text-indent:-200px; cursor:pointer;}
+.qyer_head_new_icon:hover { background-position:0 -24px;}
+.qyer_head_new_drop { display:none; position:absolute; right:-8px; top:30px; width:89px;}
+.qyer_head_new_drop_arrow { width:100%; height:5px; overflow:hidden; background:url(//static.qyer.com/images/common/head/head_new_arrow.png) no-repeat;}
+.qyer_head_new_drop_list { border:1px solid #c0c0c0; border-top:none; background-color:#fff;}
+.qyer_head_new_drop_list li { border-top:1px dotted #ccc;}
+.qyer_head_new_drop_list .qyer_head_new_drop_bbs { border-top:none;}
+.qyer_head_new_drop_list a { display:block; height:34px; padding-left:36px; font-size:14px; line-height:34px; background:url(//static.qyer.com/images/common/head/head_new_icon.png) no-repeat;}
+.qyer_head_new_drop_list a:hover { background-color:#ececec; text-decoration:none;}
+.qyer_head_new_drop_bbs a { background-position:10px 9px;}
+.qyer_head_new_drop_photo a { background-position:10px -26px;}
+.qyer_head_new_drop_plan a { background-position:10px -61px;}
+.qyer_head_new_drop_ask a { background-position:10px -96px;}
+
+.qyer_head_login_user { float:right; position:relative; z-index:997;}
+.qyer_head_login_user a.qyer_head_login_hotspot { float:right; height:30px; cursor:pointer;}
+.qyer_head_login_user a.qyer_head_login_hotspot:hover { text-decoration:none;}
+.qyer_head_login_face { position:relative; float:right;}
+.qyer_head_login_face img { display:block; width:26px; height:26px; padding:2px;}
+.qyer_head_login_face em { position:absolute; left:0; top:0; width:30px; height:30px; background:url(//static.qyer.com/images/common/head/head_user_round.png) no-repeat;}
+.qyer_head_login_name { float:right; padding-right:10px; text-align:right; line-height:30px; color:#fff;}
+.qyer_head_login_user_current .qyer_head_login_name { color:#e3f2e2;}
+.qyer_head_login_message { position:absolute; right:-12px; top:7px; z-index:40; width:24px; height:16px; background:url(//static.qyer.com/images/common/head/head_user_message.png) no-repeat 0 0; overflow:hidden;}
+
+.qyer_head_login_drop { position:absolute; right:0; top:30px; width:200px; color:#636363; background:url(//static.qyer.com/images/common/transparent.png);}
+.qyer_head_login_drop_trigon { width:100%; height:6px; position:relative; z-index:9999;}
+.qyer_head_login_drop_trigon span { display:block; width:12px; height:6px; overflow:hidden; position:absolute; top:1px; right:9px; background:url(//static.qyer.com/images/common/head/head_user_trigon.png) no-repeat 0 0;}
+.qyer_head_login_dropbox { position:relative; width:198px; border:1px solid #c0c0c0; background:#fff;}
+.qyer_head_login_dropbox_inform { padding-left:5px; overflow:hidden; _zoom:1;}
+.qyer_head_login_dropbox_inform li { float:left; display:inline; width:83px; height:24px; line-height:24px;padding:4px 0;}
+.qyer_head_login_dropbox_inform li a{color:#636363;display:block;padding-left:5px;}
+.qyer_head_login_dropbox_inform li a:hover{color:#006aad;background:#ececec;text-decoration:none;}
+.qyer_head_login_dropbox_close { position:absolute; right:11px; top:12px; width:8px; height:8px; background:url(//static.qyer.com/images/common/head/head_user_close.png) no-repeat 0 0; cursor:pointer;}
+.qyer_head_login_dropbox_list { padding:5px 0 5px 5px; overflow:hidden; _zoom:1; border-top:1px solid #e8e5de; border-bottom:1px solid #e8e5de;}
+.qyer_head_login_dropbox_list li { float:left; display:inline; width:83px; height:24px; line-height:24px;}
+.qyer_head_login_dropbox_list li a{padding:0 5px;display:block;color:#636363;}
+.qyer_head_login_dropbox_list li a:hover{color:#006aad;background:#ececec;text-decoration:none;}
+#qyer_head_login_drop { display:none;}
+
+
+/* crumb */
+.go2eu_header_crumbBg { width:100%; min-width:960px; font:12px/14px \5b8b\4f53,sans-serif; margin:20px 0; }
+.go2eu_header_crumbBox { width:960px; height:14px; margin:0 auto; color:#636363; }
+.go2eu_header_crumbBox h1 { display:inline; font-weight:normal;}
+.go2eu_header_crumbBox a { font-weight:bold; color:#0073b6; text-decoration:none; }
+.go2eu_header_crumbBox a:hover { color:#0073b6; text-decoration:underline; }
+
+
+/* crumb新版 */
+.qyer_head_crumbg { width:100%; min-width:960px; font-size:12px; line-height:14px; margin:20px 0; text-align:left; }
+.qyer_head_crumb { width:960px; height:14px; margin:0 auto; color:#636363; }
+.qyer_head_crumb .text { float:left; display:inline; position:relative;}
+.qyer_head_crumb .space { float:left; display:inline; padding:0 7px; font-family:\5b8b\4f53,sans-serif;}
+.qyer_head_crumb .drop { padding-right:12px;}
+.qyer_head_crumb em.arrow { position:absolute; top:2px; right:0; height:9px; width:9px; background:url(//static.qyer.com/images/common/head/crumb_arrow.png) no-repeat 0 0;}
+.qyer_head_crumb em.hover { background-position:0 -14px;}
+.qyer_head_crumb .current { display:inline; font-weight:normal;}
+.qyer_head_crumb a { font-weight:bold; color:#0073b6; text-decoration:none; }
+.qyer_head_crumb a:hover { color:#0073b6; text-decoration:underline; }
+
+.qyer_head_crumb_pulldown { display:none; position:absolute; z-index:999; left:0; top:0; width:320px; padding:5px; background-color:#fff; border:1px solid #c2c2c2;}
+.qyer_head_crumb_pulldown ul { float:left; width:160px;}
+.qyer_head_crumb_pulldown ul li { line-height:24px;}
+.qyer_head_crumb_pulldown ul a { display:block; padding:0 5px; width:150px; overflow:hidden;text-overflow:ellipsis;white-space:nowrap;  color:#636363; font-weight:normal;}
+.qyer_head_crumb_pulldown ul a:hover { text-decoration:none; background-color:#ececec; color:#0073b6;}
+.qyer_head_crumb_pulldown .more { display:block; padding-right:5px; line-height:24px; text-align:right;}
+
+
+/* foot */
+.qyer_footer { width:100%; min-width:960px; text-align:left; background:#363636 url(//static.qyer.com/images/common/foot_bg.png) repeat-x 0 top; font:12px/1.5 helvetica,arial,"hiragino sans gb","\5b8b\4f53",sans-serif; color:#959595; clear:both;}
+.qyer_footer a {text-decoration:none;color:#959595;}
+.qyer_footer a:hover {text-decoration:underline;color:#959595;}
+.qyer_footerBox { width:960px; margin:0 auto; padding:20px 0; overflow:hidden; }
+.qyer_footer_about { float:left; padding-top:3px;}
+.qyer_footer_about li { float:left; width:140px; line-height:24px;}
+.qyer_footer_about li dt { font-weight:bold; color:#c2c2c2;}
+.qyer_footer_attention { width:90px; overflow:hidden;}
+.qyer_footer_attention dt { padding-bottom:7px;}
+.qyer_footer_attention dd { float:left; margin:0 10px 10px 0;}
+.qyer_footer_attention a { display:block; width:20px; height:20px; overflow:hidden; line-height:100px; background:url(//static.qyer.com/models/basic/images/headfoot.png) no-repeat;}
+.qyer_footer_attention a.weibo { background-position:0 -1080px;}
+.qyer_footer_attention a.flickr { background-position:-30px -1080px;}
+.qyer_footer_attention a.renren { background-position:-60px -1080px;}
+.qyer_footer_attention a.douban { background-position:0 -1110px;}
+.qyer_footer_attention a.facebook { background-position:-30px -1110px;}
+.qyer_footer_attention a.twitter { background-position:-60px -1110px;}
+.qyer_footer_attention a.instagram { background-position:-90px -1080px;}
+.qyer_footer_attention a.weico { background-position:-90px -1110px;}
+.qyer_footer_appStore { float:right; padding-top:10px;}
+.qyer_footer_appStore a { display:block; width:135px; height:40px; background:url(//static.qyer.com/models/basic/images/headfoot.png) no-repeat 0 -74px; overflow:hidden; text-indent:-200px;}
+.qyer_footer_copyright { box-sizing:border-box; clear:left; width:100%; padding:20px 0 0 110px; overflow:hidden; _zoom:1;}
+.qyer_footer_copyright img { float:left; margin:3px 0 0 -110px;}
+
+/*foot-友情链接*/
+.qyer_footer_links { width:100%; overflow:hidden; padding:20px 0 0;}
+.qyer_footer_links dt { float:left; font-weight:700; margin-right:5px; color:#c2c2c2;}
+.qyer_footer_links dd { float:left; margin-right:5px;}
+.qyer_footer_links a { white-space:nowrap;}
+
+/*message*/
+#mod_message { position:fixed; z-index:99999; left:0; top:0; float:left; padding:20px; background:#fff; border:1px solid #c0c0c0; box-shadow:0 1px 5px rgba(0,0,0,0.2);}
+#mod_message_cont { font-size:14px; line-height:24px;}
+#mod_message .true { padding-left:35px; background:url(//static.qyer.com/images/common/tpl/icon_true24.png) no-repeat left center;}
+#mod_message .warn { padding-left:35px; background:url(//static.qyer.com/images/common/tpl/icon_warn24.png) no-repeat left center;}
+
+/*popup*/
+.ui_popup_bg { position:absolute; z-index:1000; top:0; left:0; width:100%; height:100%; background:url(//static.qyer.com/images/common/popup_bg.png);}
+.ui_popup { position:relative; width:500px; margin:50px auto 0; border:1px solid #c0c0c0; box-shadow:0 1px 6px rgba(0,0,0,0.3);}
+.ui_popup_main { background:#fff;}
+.ui_popup_close { position:absolute; z-index:1; top:8px; right:8px; width:30px; height:30px; background:url(//static.qyer.com/images/common/tpl/popup_close.png) no-repeat 0 -30px; cursor:pointer;}
+.ui_popup_close:hover { background-position:0 0;}
+
+
+/*文本框高度自适应*/
+#js_autoheight_clone { display:block; position:absolute; left:0; bottom:0; height:18px; border-width:0px; padding:0px; overflow:hidden; visibility:hidden;}
+
+
+/*form*/
+.ui2_input { height:24px; overflow:hidden; padding:3px 7px; border:1px solid #c0c0c0; font-size:14px; line-height:24px;}
+.ui2_textarea { height:24px; min-height:24px; overflow:hidden; padding:3px 7px; border:1px solid #c0c0c0; font-size:14px; line-height:24px;}
+.ui2_input:focus, .ui2_textarea:focus { border-color:#5fa678; box-shadow:0 2px 2px 0 rgba(0,0,0,0.05) inset;}
+.ui2_focus { border-color:#5fa678; box-shadow:0 2px 2px 0 rgba(0,0,0,0.05) inset;}
+.ui2_error { border-color:#cb0900; box-shadow:0 2px 2px 0 rgba(0,0,0,0.05) inset;}
+
+
+/*error-layer*/
+.ui2_error_layer { position:absolute; left:100px; top:-1px; float:left; height:22px; line-height:22px; padding:0 8px; border:1px solid #cb0013; background:#ffcccd; color:#636363;}
+.ui2_error_layer_arrow { position:absolute; top:-6px; left:11px; width:0; height:0; overflow:hidden; border:6px solid transparent; border-bottom-color:#cb0013; border-top-width:0;}
+.ui2_error_layer_arrow2 { position:absolute; top:-5px; left:12px; width:0; height:0; overflow:hidden; border:5px solid transparent; border-bottom-color:#ffcccd; border-top-width:0;}
+.ui2_error_layer_arrowb { position:absolute; bottom:-6px; left:11px; width:0; height:0; overflow:hidden; border:6px solid transparent; border-top-color:#cb0013; border-bottom-width:0;}
+.ui2_error_layer_arrowb2 { position:absolute; bottom:-5px; left:12px; width:0; height:0; overflow:hidden; border:5px solid transparent; border-top-color:#ffcccd; border-bottom-width:0;}
+.ui2_error_layer_arrowl { position:absolute; top:5px; left:-6px; width:0; height:0; overflow:hidden; border:6px solid transparent; border-right-color:#cb0013; border-left-width:0;}
+.ui2_error_layer_arrowl2 { position:absolute; top:6px; left:-5px; width:0; height:0; overflow:hidden; border:5px solid transparent; border-right-color:#ffcccd; border-left-width:0;}
+.ui2_error_layer_text {}
+
+
+/*ui-pages*/
+.ui_pages { text-align:right;}
+.ui_pages_item { display:inline-block; font-size:14px; line-height:24px; color:#636363; padding:0 6px;}
+.ui_pages_item:hover { background:#e0f1e1; border-radius:3px; text-decoration:none; color:#323232;}
+.ui_pages_current, .ui_pages_current:hover { background:#5ea67c; border-radius:3px; font-weight:700; color:#fff;}
+.ui_pages_prev, .ui_pages_next { font-size:12px;}
+.ui_pages_prev { margin-right:16px;}
+.ui_pages_next { margin-left:16px;}
+.ui_pages_null { color:#c0c0c0;}
+.ui_pages_null:hover { color:#c0c0c0; background:none; cursor:default;}
+
+
+/*mod-talk*/
+.mod_talk { width:680px;}
+.mod_talk_title { margin-bottom:20px; font-size:18px; line-height:20px; color:#636363;}
+.mod_talk_edit { width:588px; padding-left:92px; margin-bottom:20px;}
+.mod_talk_edit_face { float:left; margin-left:-92px;}
+.mod_talk_edit_face img { border-radius:50%;}
+.mod_talk_edit_cnt { position:relative; background:#f5f5f5; border:1px solid #d7d7d7; padding:9px; box-shadow:0 0 3px rgba(0,0,0,0.12);}
+.mod_talk_edit_cnt .arrow { position:absolute; top:34px; left:-9px; width:0; height:0; overflow:hidden; border:9px solid transparent; border-right-color:#d7d7d7; border-left-width:0;}
+.mod_talk_edit_cnt .arrow2 { position:absolute; top:35px; left:-8px; width:0; height:0; overflow:hidden; border:8px solid transparent; border-right-color:#f5f5f5; border-left-width:0;}
+.mod_talk_edit_cnt textarea { width:552px; height:72px; min-height:72px;}
+.mod_talk_edit_cnt .btm { padding-top:10px; position:relative;}
+.mod_talk_edit_cnt .words { color:#959595; line-height:14px;}
+.mod_talk_edit_cnt .sum_error { font-weight:700; color:#cb0900;}
+.mod_talk_list { border-top:1px solid #ececec;}
+.mod_talk_list_item { width:622px; padding:20px 0 20px 58px; border-bottom:1px solid #ececec;}
+.mod_talk_list_item .face { float:left; margin-left:-58px;}
+.mod_talk_list_item .face img { border-radius:50%;}
+.mod_talk_list_item .name { font-size:14px; line-height:16px; font-weight:700;}
+.mod_talk_list_item .cnt { padding-top:1px; font-size:14px; word-break:break-all; word-wrap:break-word;}
+.mod_talk_list_item .bottom { padding-top:9px; line-height:14px;}
+.mod_talk_list_item .btns { float:right;}
+.mod_talk_list_item .btns .gap { padding:0 13px; color:#959595;}
+.mod_talk_list_item .btns .reply { padding-left:19px; background:url(//static.qyer.com/images/common/tpl/talk_reply.png) no-repeat 0 center;}
+.mod_talk_list_item .date { color:#959595;}
+.mod_talk_list_reply { position:relative; width:548px; margin-top:12px; padding:15px 15px 15px 57px; background:#f5f5f5; border:1px solid #d7d7d7; box-shadow:0 0 3px rgba(0,0,0,0.12);}
+.mod_talk_list_reply .arrow { position:absolute; top:-8px; right:15px; width:0; height:0; overflow:hidden; border:8px solid transparent; border-bottom-color:#d7d7d7; border-top-width:0;}
+.mod_talk_list_reply .arrow2 { position:absolute; top:-7px; right:16px; width:0; height:0; overflow:hidden; border:7px solid transparent; border-bottom-color:#f5f5f5; border-top-width:0;}
+.mod_talk_list_reply .self { float:left; margin-left:-42px;}
+.mod_talk_list_reply .self img { border-radius:50%;}
+.mod_talk_list_reply textarea { width:532px; height:24px; min-height:24px;}
+.mod_talk_list_reply .btm { padding-top:10px; position:relative;}
+.mod_talk_list_reply .words { color:#959595; line-height:14px;}
+.mod_talk_list_reply .sum_error { font-weight:700; color:#cb0900;}
+
+@charset "utf-8";
+
+
+.main { width:960px; margin:20px auto 50px;}
+.aside { width:270px;}
+.content { width:670px;}
+
+/*锦囊预览弹出层*/
+.jn_mask { display:none; position:absolute; z-index:1000; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.3); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4c000000', EndColorStr='#4c000000'); overflow:auto;}
+:root .jn_mask{filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000');}
+.jn_popup { position:relative; width:910px; margin:0 auto; background-color:#fff; border:1px solid #666; border-top:none; border-bottom:none; box-shadow:0 0 10px #666;}
+.jn_popup_head { position:fixed; _position:absolute; z-index:99991; top:0; width:880px; padding:10px 15px 20px; background:#fff url(//static.qyer.com/images/guide/jn_popup_headbg.png) repeat-x 0 bottom;}
+.jn_popup_close { background:url(//static.qyer.com/images/guide/jn_popup_close.png) no-repeat; position:absolute; z-index:100010; top:20px; right:20px;overflow:hidden; width:26px; height:26px; cursor:pointer;}
+.jn_popup_close img{cursor:pointer;}
+.jn_popup_close:hover img{margin-top:-26px;}
+.jn_popup_close:hover { background-position:0 -26px;}
+.jn_popup_cnt { padding:80px 0 10px;}
+.jn_popup_moredown {position:absolute; bottom:0; left:0; width:910px; height:760px; background:url(//static.qyer.com/images/guide/popup_shadowbg.png) no-repeat; text-align:center;}
+.jn_popup_moredown .text {padding-top:450px; font-size:30px; line-height:32px; color:#0071c2;}
+.jn_popup_moredown .btn {padding-top:15px;}
+
+.gdTitle { margin-bottom:8px; font-size:14px; line-height:16px; font-weight:bold; color:#636363;}
+.gui_title { margin-top:-10px; line-height:34px; font-weight:bold; font-size:14px; color:#636363;}
+
+/*首页-头部简介*/
+.gui_top { margin-bottom:10px; position: relative; background: #e43833;}
+
+/*首页-锦囊分类*/
+.gui_navbox { width:200px; height:500px; background-color:#f6f6f6;}
+.gui_nav { position:relative; z-index:9; width:100%; height:297px;}
+.gui_nav_item { z-index:9; float:left; display:inline; width:100%; border-bottom:1px solid #fff;}
+.gui_nav_item_title {
+    padding: 6px 16px 6px 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #636363;
+    position: relative;}
+.gui_nav_item_title .sum {
+    width: 37px;
+    border-radius: 7px;
+    background-color: #cecece;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    height: 22px;
+    line-height: 22px;
+}
+.gui_nav_item_title .catename {
+    font-size: 16px;
+    color: #535353;
+    opacity: .8;
+}
+.gui_nav_item_current {}
+.gui_nav_item_current .gui_nav_item_title { background-color:#ebebeb;}
+.gui_nav_item_current .gui_nav_item_subnav { display:block;}
+.gui_nav_item_subnav { display:none; float:left; position:absolute; left:199px; top:0; width:700px; height:320px; overflow:hidden; border-left:1px solid #fff; border-top:20px solid transparent; border-bottom:20px solid transparent;}
+.gui_nav_item_subnav ul { background:#f5f5f6;}
+.gui_nav_item_subnav li { float:left; display:inline; width:174px; height:305px; padding-top:15px; border-right:1px dotted #ccc;}
+.gui_nav_item_subnav dl { margin-bottom:5px;}
+.gui_nav_item_subnav dt { color:#999; text-indent:22px;}
+.gui_nav_item_subnav dd a { display:block; padding-left:34px; line-height:24px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.gui_nav_item_subnav dd a:hover { background-color: rgba(0,0,0,0.15); text-decoration:none;}
+
+.gui_nav_item_subnav_roll .carousel-wrap { width:100%; background:#f5f5f6;}
+.gui_nav_item_subnav_roll .carousel-control { position:absolute; z-index:9; bottom:7px; width:30px; height:30px; overflow:hidden; background:#676767 url(//static.qyer.com/images/guide/carousel_control.png) no-repeat; border:none; border-radius:2px; cursor:pointer; text-indent:-200px;}
+.gui_nav_item_subnav_roll .previous { right:50px; background-position:9px 8px;}
+.gui_nav_item_subnav_roll .next { right:7px; background-position:-19px 8px;}
+.gui_nav_item_subnav_roll .hover { background-color:#4e8a33;}
+.gui_nav_item_subnav_roll .disabled { cursor:default; background-color:#ccc;}
+
+/*首页-穷游锦囊search*/
+.gui_search {
+    position: absolute;
+    z-index: 20;
+    left: 654px;
+    top: 21px;
+    width: 265px;
+    border: 1px solid #eee;
+    height: 30px;
+    background: #fff;
+    border-radius: 5px;
+    padding-left: 1px;
+}
+.gui_search .ui_input {
+    width: 200px;
+    background: #FFF url(//static.qyer.com/images/guide/ic_search_g.png) no-repeat 15px 10px;
+    padding-left: 43px;
+    height: 29px;
+    border: none;
+    float: left;
+    background-size: 5%;
+    font-size: 14px;
+    padding-top: 1px;
+}
+.gui_search .ui_input_close {
+    width: 10px;
+    height: 10px;
+    display: block;
+    float: left;
+    margin-top: 11px;
+    cursor: pointer;
+}
+.gui_search .ui_input_close img {
+    width: 6px;
+    margin: 1px;
+}
+.gui_search_lay { display:none; position:absolute; width:255px; left:0; top:25px; background-color:#fff; border:1px solid #ccc; border-bottom:none;}
+.gui_search_lay_list li { border-bottom:1px solid #ccc;}
+.gui_search_lay_list li.current { background-color:#e6f4d9;}
+.gui_search_lay_list a { display:block; width:242px; padding:6px 5px 6px 10px; color:#323232;}
+.gui_search_lay_list a:hover { background-color:#e6f4d9; text-decoration:none; color:#323232; width: 240px;}
+.gui_search_lay_list .title_cn { display:block;}
+.gui_search_lay_list .title_en { display:block; color:#959595;}
+.gui_search_lay_list .title_cn, .gui_search_lay_list .title_en {width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.gui_search_lay_list .related { font-weight:bold; color:#007345;}
+.gui_search_lay_null { border-bottom:1px solid #ccc; line-height:28px; text-align:center; color:#666;}
+
+/*首页-穷游锦囊移动端*/
+.gui_qyjndown { }
+.gui_qyjndown .icon {
+    float: left;
+    margin-left: 26px;
+    margin-top: 6px;
+}
+.gui_qyjndown .icon img {
+    box-shadow: 0 1px 1px #ccc;
+    border-radius: 6px;
+}
+.gui_qyjndown .tit {
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    opacity: .6;
+    float: left;
+    color: #000;
+    margin: 13px 0 12px 6px;
+}
+.gui_qrcode {
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+}
+.gui_qyjndown .txt { margin-top:4px; line-height:16px; color:#d7d7d7;}
+
+/*首页-焦点图*/
+.gui_focus { position:relative; width:750px; height:500px; overflow:hidden;}
+.gui_focus .slides_container { width:750px; height:500px;}
+.gui_focus .pagination { position:absolute; right:20px; bottom:20px; z-index:6;}
+.gui_focus .pagination li { float:left; margin-left:10px;}
+.gui_focus .pagination li a { float:left; width:12px; height:12px; overflow:hidden; padding:0; border:none; line-height:320px; background: #fff; border-radius: 50%; opacity: .5;}
+.gui_focus .pagination .current a { opacity: 1;}
+
+/*首页-左侧广告*/
+.guide_ad { margin-bottom:30px;}
+
+/*首页-锦囊列表*/
+.gui_jnlist_item { float:left; display:inline; width:108px;}
+.gui_jnlist_item_pic { position:relative; padding:3px; border:1px solid #ccc; box-shadow:0 0 2px #ccc; background-color:#fff;}
+.gui_jnlist_item_pic .new { position:absolute; top:3px; left:3px; width:36px; height:36px; background:url(//static.qyer.com/images/guide/jn_new2.png) no-repeat 0 0;}
+.gui_jnlist_item_pic .mask { display:none; position:absolute; top:2px; left:2px; width:100px; height:150px; background-color:#000; opacity:0.5; filter:alpha(opacity=50);}
+.gui_jnlist_item_tit { padding-top:10px;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; font-weight:bold;color:#006aad;}
+.gui_jnlist_item_text { color:#636363;}
+.gui_jnlist_item_text .sum { font-weight:bold; color:#009933;}
+
+/*首页-编辑推荐*/
+.gdEditorRecom { background-color:#f6f6f6; padding:0 3px;}
+.gdEditorRecom li { float:left; width:108px; padding:15px 25px; border-left:1px dotted #ccc;}
+.gdEditorRecom li:first-child { border-left:none;}
+.gdEditorRecom .pic { position:relative; padding:3px; border:1px solid #ccc; box-shadow:0 0 2px #ccc; background-color:#fff;}
+.gdEditorRecom .pic .new { position:absolute; top:3px; left:3px; width:36px; height:36px; background:url(//static.qyer.com/images/guide/jn_new2.png) no-repeat 0 0;}
+.gdEditorRecom .pic .mask { display:none; position:absolute; top:2px; left:2px; width:100px; height:150px; background-color:#000; opacity:0.5; filter:alpha(opacity=50);}
+.gdEditorRecom .tit { padding-top:10px;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; font-weight:bold;color:#006aad;}
+.gdEditorRecom .btn { margin-top:7px;}
+.gdEditorRecom .btn a { display:block;}
+
+
+/*首页-全部锦囊*/
+.gui_all {}
+.gui_all .gui_jnlist { margin-left:-32px;}
+.gui_all .gui_jnlist_item { padding-left:32px;}
+.gui_all .border { width:100%; height:0; overflow:hidden; border-bottom:1px dotted #e2e2e2; padding-bottom:17px; margin-bottom:20px;}
+.gui_tab { margin-bottom:15px;}
+
+/*首页-他们刚刚下载*/
+.mandown {}
+.mandown li { margin-top:6px; padding-left:30px; height:24px; line-height:24px; color:#666;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.mandown .face { float:left; display:inline; margin-left:-30px;}
+
+
+
+
+
+
+/*详细页-头部*/
+.gui_banner_title { position:relative; margin-bottom:20px; padding:8px 0 8px 24px; background-color:#e8e5df; line-height:24px; font-size:18px; font-weight:bold;}
+.gui_banner_title_en { display:block; font-family:Arial, Helvetica, sans-serif;}
+.gui_banner_title_cn { display:block; font-family:"hiragino sans gb","Microsoft YaHei",\5b8b\4f53,sans-serif;}
+.gui_banner_title_slogan { position:absolute; bottom:8px; right:10px; font-size:18px; font-family:"hiragino sans gb","Microsoft YaHei",\5b8b\4f53,sans-serif;}
+
+/*详细页-基本信息*/
+.gui_info_text { margin-top:-3px; font-size:14px; line-height:20px;}
+.gui_info_text .name { font-weight:bold;}
+.gui_info .number { font-size:24px; color:#087346; line-height:40px;}
+.gui_info_download { margin-top:10px;}
+.gui_info_download .down { float:left; display:inline; width:164px; height:44px; overflow:hidden; cursor:pointer; background:url(//static.qyer.com/images/guide/jn_down.png) no-repeat 0 0; line-height:200px;}
+.gui_info_download .down:hover { background-position:0 -50px;}
+.gui_info_download .down:active { background-position:0 -100px;}
+.gui_info_download .help { float:left; padding-left:10px; line-height:44px;}
+
+/*详细页-穷游锦囊移动端*/
+.gui_qyjndown2 { padding:10px 0 0 65px;}
+.gui_qyjndown2 .icon { float:left; margin-left:-65px;}
+.gui_qyjndown2 .tit { padding-top:8px; font-size:16px; line-height:1.25;}
+.gui_qyjndown2 .txt { margin-top:4px; line-height:16px; color:#d7d7d7;}
+
+.gui_qyjnlist2 { padding-top:10px;}
+.gui_qyjnlist2 li { float:left; display:inline; margin-right:10px;}
+.gui_qyjnlist2 li img { display:block;}
+.gui_qyjnlist3 { padding-top:10px; margin-left:-9px;}
+.gui_qyjnlist3 li { float:left; display:inline; margin-left:9px;}
+.gui_qyjnlist3 li img { display:block;}
+
+/*现在下载的穷游er*/
+.gui_nowdown { margin-left:-15px;}
+.gui_nowdown li { float:left; display:inline; width:80px; margin-left:15px;}
+.gui_nowdown_title { width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; margin-top:5px;}
+
+/*详细页-相关目的地*/
+.gui_place { margin-top:25px;}
+.gui_poilist_item { float:left; display:inline; width:212px; height:48px; padding-left:58px; margin-bottom:10px; background:#f5f4f0; position:relative;}
+.gui_poilist_item_img { float:left; margin-left:-58px; width:48px; height:48px;}
+.gui_poilist_item_title { margin-top:5px; width:200px; height:18px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.gui_poitravel li { line-height:22px; padding-left:10px; background:url(//static.qyer.com/images/guide/icon_ask_type.png) no-repeat 0 9px;}
+
+/*icon-想去,去过*/
+.icon_ind_want, .icon_ind_been, .icon_ind_want_selected, .icon_ind_been_selected { padding-left:11px; background:url(//static.qyer.com/images/place/icon_ind_want.png) no-repeat 0 5px; cursor:pointer;}
+.icon_ind_been { background-position:0 -13px;}
+.icon_ind_want_selected { background-position:0 -31px;}
+.icon_ind_been_selected { background-position:0 -49px;}
+
+/*详细页-锦囊封面*/
+.jn_preview { position:relative; cursor:pointer;}
+.jn_preview_btn { position:absolute; top:15px; right:15px; width:124px; height:40px; line-height:40px; background:url(//static.qyer.com/images/guide/jn_preview.png) no-repeat; color:#fff; font-size:16px; font-weight:bold; text-indent:40px;}
+
+.jn_cover_text { text-align:right; padding-top:9px; line-height:20px;}
+
+.jn_intro { padding:20px 0 12px; border-bottom:1px dotted #e2e2e2;}
+.jn_intro_text { margin-top:-3px;}
+
+.jn_author { padding:15px 0 10px; border-bottom:1px dotted #e2e2e2;}
+.jn_author_info { padding-left:58px; overflow:hidden;}
+.jn_author_info_face { float:left; display:inline; margin-left:-58px;}
+.jn_author_info_text { margin-top:-2px;}
+.jn_author_text { margin-top:5px;}
+.jn_author_thank { margin-top:10px; line-height:24px;}
+.jn_author_thanklist { margin-top:6px;}
+.jn_author_thanklist li { float:left; width:115px; margin-right:10px; margin-bottom:10px; padding-left:42px; line-height:32px;}
+.jn_author_thanklist p { width:100%; height:32px; overflow:hidden;text-overflow:ellipsis;white-space:nowrap; color:#006aad;}
+.jn_author_thanklist .ui_headPort { float:left; margin-left:-42px;}
+
+/*日志*/
+.jn_logs { padding:20px 0 17px; border-bottom:1px dotted #e2e2e2;}
+.jn_logs_cnt { max-height:90px; overflow:hidden;}
+.jn_logs_handle a { padding-left:18px; background:url(//static.qyer.com/images/guide/arrow_updown.png) no-repeat;}
+.jn_logs_handle a.viewall { background-position:0 5px;}
+.jn_logs_handle a.shrink { background-position:0 -15px;}
+
+/*详细页-锦囊纠错*/
+.gui_correct .ui_textarea { width:658px; height:180px; min-height:180px; margin-top:10px;}
+
+/*详细页-锦囊评论*/
+.comment_tit { font-size:14px; font-weight:bold;}
+.gui_comment { padding-top:5px;}
+.gui_comment .ui_textarea { width:658px; height:72px; min-height:72px; margin-top:10px;}
+.gui_comment_btn { margin-top:10px; color:#636363;}
+
+.gui_comment_reply .operate { display:none;}
+.gui_comment_reply .ui_remore, .gui_comment_reply .ui_reload { margin-top:10px;}
+.gui_comment_reply_item { min-height:48px; margin-top:10px;}
+.gui_comment_reply_face { float:left; display:inline; width:48px; height:48px;}
+.gui_comment_reply_box { margin-left:58px; padding:2px 10px 0 0;}
+.gui_comment_reply_box_name { color:#636363;}
+.gui_comment_reply_box_text { padding-top:2px;word-wrap:break-word;word-break:break-all;}
+.gui_comment_reply_post { margin-top:5px; background-color:#f5f4f0;}
+
+/* 左侧问答模块 */
+.ask_related { margin-bottom:30px;}
+.ask_related .ui_tab_trigger { padding-top:5px; font-family:\5b8b\4f53,sans-serif;}
+.ask_related .ui_tab_trigger_item { font-weight:bold;}
+.ask_related .ui_tab_trigger_item_current a { color:#636363;}
+.ask_related .ui_tab_trigger_item_current a:hover { text-decoration:none;}
+.ask_related_list {}
+.ask_related_list li { position:relative; height:36px; padding:7px 10px 7px 10px; border-bottom:1px dotted #e2e2e2; background:url(//static.qyer.com/images/guide/icon_ask_type.png) no-repeat 0 13px;}
+.ask_related_list li .number { position:absolute; right:0; bottom:7px; color:#636363;}
+.ask_related_more { padding:7px 0; text-align:right;}
+.ask_related_tag { padding:15px 0 10px; font-weight:bold; color:#636363;}
+.ask_related_taglist{overflow:hidden;zoom:1;}
+.ask_related_taglist a{float:left;margin-right:10px;}
+
+/* 锦囊下载 */
+
+.ind_title_more { padding-left:17px; background:url(//static.qyer.com/images/www/index/title_morebg.png) no-repeat 0 center;}
+
+/* 下载进度 */
+.jn_download{height:89px;background:#e0f1df;}
+.jn_down_bg{padding:4px 0 0 45px;background:url(//static.qyer.com/images/guide/down/down_bg.png) no-repeat left top;display:inline-block;margin-top:16px;}
+
+/* 热点内容 */
+.jn_down_hot{padding:0 0 0 20px; position:relative;}
+.jn_down_tit{padding-right:20px; position:relative;}
+.jn_down_tit h3 { line-height:36px;}
+.jn_down_tit .button { width:140px; height:38px; text-indent:-9999px; display:block; position:absolute; right:20px; top:10px; background:url(//static.qyer.com/images/guide/down/found_btn.png) no-repeat;}
+.jn_down_tit .button:hover { background-position:0 -38px;}
+.jn_down_tit .ind_title_more { margin-top:10px;}
+
+/*大家都说好*/
+.icon_essence { width:56px; height:56px; overflow:hidden; line-height:500px; background:url(//static.qyer.com/images/place/four/icon_essence.png) no-repeat;}
+
+/* 行程内容 */
+.jn_found_content { margin:70px 0 0; padding-bottom:20px;}
+.jn_found_content dl { width:193px; float:left; margin-left:20px; padding:45px 10px 0; height:80px; background:#eee; border-radius:8px; text-align:center;}
+.jn_found_content .bg1 { margin-left:0;}
+.jn_found_content .bg1 span { background:url(//static.qyer.com/images/plan2/index/help_bg1.png) no-repeat;}
+.jn_found_content .bg2 span { background:url(//static.qyer.com/images/plan2/index/help_bg2.png) no-repeat;}
+.jn_found_content .bg3 span { background:url(//static.qyer.com/images/plan2/index/help_bg3.png) no-repeat;}
+.jn_found_content dt { height:18px; font-size:14px; line-height:18px; font-weight:700; position:relative;}
+.jn_found_content dt span { width:62px; height:62px; display:block; position:absolute; left:60px; top:-75px;}
+.jn_found_content dd { color:#959595; margin-top:4px;}
+
+/*读过才能走*/
+.pl_bbsbox {margin-left:-20px;}
+.pl_bbsbox .item { margin:0 2px 0 20px; width:212px;float:left;}
+.pl_bbsbox .pic { position:relative; width:200px; padding:5px; border:1px solid #e5e5e5; box-shadow:0 0 3px #ddd;}
+.pl_bbsbox .pic img { display:block;}
+.pl_bbsbox .pic .label { position:absolute; top:0; right:0;}
+.pl_bbsbox .cnt {padding:10px 6px 0;margin-bottom:7px;font-weight:700;height:36px;line-height:18px;overflow:hidden;}
+
+/*平时不常有*/
+.jn_discount{background:#f5f4ee;border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;}
+.jn_discount li{width:349px;float:left;border-left:1px solid #d7d7d7;height:60px;}
+.jn_discount li span{color:#fff;float:left;padding:0 10px;line-height:32px;background:#6faf8e;position:relative;margin:14px 10px 0 -5px;font-weight:700;box-shadow:1px 2px 2px #aaa;border-radius:1px;font-size: 14px;}
+.jn_discount li em{font-size:18px;padding-right:6px;font-family:Tahoma, Geneva, sans-serif;float:left;position: relative;top: -1px;}
+.jn_discount li strong{display:block;position:absolute;background:url(//static.qyer.com/images/guide/down/quo_png_bg.png) no-repeat;width:5px;height:4px;left:0;bottom:-4px;}
+.jn_discount li div{overflow:hidden;height:44px;padding:8px 20px 0 0;}
+.jn_discount li p{line-height:22px;height:44px;font-size:16px;display:table-cell;vertical-align:middle;}
+
+
+
+
+.downloadPopTitle{background-color: #fafafa; border-bottom: solid 1px #eaf2ea; }
+.downloadPopTitle_p{padding: 25px 0 0 15px; font-size: 18px; font-weight: bold; }
+.downloadPopTitle_text{padding: 20px 0 5px 15px; font-size: 16px; color: #636363;}
+.plan_introduce{padding: 25px 0; background-color: #e0f1df; }
+.plan_introduce_item{height: 40px; line-height: 40px; width: 124px; border-radius: 3px; margin-left: 30px; border:solid 1px  #52a060; color: #3ea060; font-size:14px; background-image: url(//static.qyer.com/images/guide/down/icons.png); background-repeat: no-repeat; padding-left: 60px;font-weight: bold;}
+.plan_introduce_item1{background-position: 20px 2px; }
+.plan_introduce_item2{background-position: 20px -52px; }
+.plan_introduce_item3{background-position: 20px -105px; }
+.plan_introduce_linkA{display: block; margin: 22px 0 0 247px; height: 40px; line-height: 40px; width: 134px; border-radius: 3px; color: #fff; background-color:#47a368; font-size:18px; text-shadow: 1px 1px 2px #666; background-image: url(//static.qyer.com/images/guide/down/icons.png); background-repeat: no-repeat; padding-left: 50px; background-position: 22px -184px; }
+.plan_introduce_linkA:hover{text-decoration: none; background-color:#59ae78; }
+.plan_introduce_travel{display: none; padding-left: 20px;}
+
+/*折扣*/
+.discount_info{
+    display: none;
+    padding-left: 20px;
+}
+.plan_box{
+	overflow: hidden;
+	height: 235px;
+	background: #f6f6f6;
+	border-top:1px solid #ccc;
+    position: relative;
+	width: 720px;
+	/*background: url(//static.qyer.com/images/guide/icon_map.jpg) no-repeat left top;*/
+}
+.plan_box .btn{position: absolute;right: 56px;bottom: 15px;cursor: pointer;display: inline;z-index: 2;
+width: 184px;height: 40px;background: url(//static.qyer.com/images/guide/icon_download.png) no-repeat left top;}
+.plan_box .btn:hover{opacity: 0.8;}
+.plan_box .btn img{display: inline-block;}
+.plan_box > img{position: absolute;left: 0;top:0;width: 719px;height: 207px;z-index: 1;}
+.plan_box > ul > li{
+    display: inline-block;
+    border-right: 1px solid #eee;
+}
+.plan_box > ul > li:last-child{
+    border-right: none;
+}
+.downapp{
+    position: absolute;
+    top: 75px;
+    left: 250px;
+}
+.downapp > li{
+	margin-bottom: 15px;
+	display: inherit;
+}

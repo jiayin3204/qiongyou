@@ -1,0 +1,41 @@
+body,ul,h1,h2,h3,h4,h5,h6,p,input,button{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 400;
+}
+li{
+	list-style: none;
+}
+input,button{
+	outline-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	vertical-align: middle;
+	border: 0;
+}
+.w{
+	width: 1162px;
+	margin: 0 auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}

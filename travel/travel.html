@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>旅游线路推荐_旅游行程安排规划_一键导出行程单 - 穷游行程助手</title>
+    <!-- 视图窗口，移动端特属的标签。 -->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/travel.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/pageSwitch.js"></script>
+</head>
+<body>
+<!--顶部通栏-->
+<div class="header">
+    <div class="logo fl"><a href="../index/index.html"><img src="images/logo_116x36.png" alt="logo"/></a></div>
+    <ul class="header_left">
+        <li><a href="#">目的地</a></li>
+        <li><a href="../kits/kits.html">锦囊</a></li>
+        <li class="silk"><a href="javascript:;">行程助手</a></li>
+        <li class="community" id="com">
+            <a href="#" class="iconfont">社区&#xe501;</a>
+        </li>
+        <li class="shopping" id="shopping2"><a href="../mall/mall.html" class="iconfont">穷游商城&#xe501;
+            <div><img src="images/gif.gif" alt=""/></div>
+        </a>
+        </li>
+        <li><a href="#">机票</a></li>
+        <li><a href="../hotel/hotel.html">酒店</a></li>
+        <li class="reserve" id="reserve2"><a href="#" class="iconfont">预定&#xe501;</a></li>
+    </ul>
+    <div class="community_none" id="community_none2">
+        <ul>
+            <li>
+                <img src="images/1_6.png" alt=""/>
+                <a href="#"><span class="s1"></span>旅行论坛</a>
+            </li>
+            <li><a href="#"><span class="s2"></span>旅行问答</a></li>
+            <li><a href="#"><span class="s3"></span>JNE旅行生活美学</a></li>
+            <li><a href="#"><span class="s4"></span>特别策划</a></li>
+            <li><a href="#"><span class="s5"></span>负责任的旅行</a></li>
+        </ul>
+    </div>
+    <div class="shopping_none" id="shopping_none2">
+        <ul>
+            <li>
+                <img src="images/1_6.png" alt=""/>
+                <a href="#"><span class="s1"></span>机酒自由行</a>
+            </li>
+            <li><a href="#"><span class="s2"></span>当地玩乐</a></li>
+            <li><a href="#"><span class="s3"></span>签证</a></li>
+            <li><a href="#"><span class="s4"></span>游轮</a></li>
+            <li><a href="#"><span class="s5"></span>深度旅行</a></li>
+            <li><a href="#"><span class="s6"></span>保险</a></li>
+            <li><a href="#"><span class="s7"></span>私人订制</a></li>
+        </ul>
+    </div>
+    <div class="reserve_none" id="reserve_none2">
+        <ul>
+            <li>
+                <img src="images/1_6.png" alt=""/>
+                <a href="#"><span class="r1"></span>特价酒店</a>
+            </li>
+            <li><a href="#"><span class="r2"></span>爱彼迎</a></li>
+            <li><a href="#"><span class="r3"></span>华人旅馆</a></li>
+            <li><a href="#"><span class="r4"></span>租车</a></li>
+        </ul>
+    </div>
+    <ul class="header_right">
+        <li class="sign"><a href="../LoginRegistration/Login.html">登录</a></li>
+        <li><a href="../LoginRegistration/register.html">注册</a></li>
+        <li><a href="#" class="iconfont">&#xe6f6;</a></li>
+        <li><a href="#" class="iconfont">&#xe600;</a></li>
+        <li><a href="#" class="iconfont">&#xe667;</a></li>
+        <li class="li_last"></li>
+        <li><a href="#" class="iconfont">&#xe609;</a></li>
+    </ul>
+</div>
+<!--行程助手-->
+<div class="assistant">
+    <div class="ass_left fl">
+        <img src="images/1.png" alt=""/>
+        <span>行程助手</span>
+    </div>
+    <div class="ass_right fr">
+        <ul class="ass_cont">
+            <li><a href="#">使用帮助</a></li>
+            <li><a href="#">APP下载</a></li>
+            <li><a href="#">免费私人定制</a></li>
+            <li><a href="#">企业版</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--一分钟搞定你的攻略-->
+<div class="banner clearfix">
+    <img src="images/banner-2-txt@2x.png" alt="" class="clearfix"/>
+
+
+    <div id="contentContainer" class="trans3d">
+        <section id="carouselContainer" class="trans3d">
+            <figure id="item1" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product1.jpg)"></div>
+            </figure>
+            <figure id="item2" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product2.jpg)"></div>
+            </figure>
+            <figure id="item3" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product3.jpg)"></div>
+            </figure>
+            <figure id="item4" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product4.jpg)"></div>
+            </figure>
+            <figure id="item5" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product5.jpg)"></div>
+            </figure>
+            <figure id="item6" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product6.jpg)"></div>
+            </figure>
+            <figure id="item7" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product7.jpg)"></div>
+            </figure>
+            <figure id="item8" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product8.jpg)"></div>
+            </figure>
+            <figure id="item9" class="carouselItem trans3d">
+                <div class="carouselItemInner trans3d" style="background-image:url(images/product9.jpg)"></div>
+            </figure>
+        </section>
+    </div>
+
+
+    <p>共有<span>842万穷游</span>er,创建了<span>17,924,137</span>个行程</p>
+    <!--<ul class="float_img">-->
+    <!--<li><img src="images/float_img.jpg" alt=""/></li>-->
+    <!--</ul>-->
+    <div class="banner_btn" id="banner_btn">
+        <a href="#">
+            <i>+</i><span>创建新的行程</span>
+        </a>
+        <ul>
+            <li><a href="#">自己制定</a></li>
+            <li><a href="#">帮我制定</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--精品行程-->
+<div class="index-content w">
+    <div class="index-content-bg">不想自己做行程，为什么不看看别人的？</div>
+    <div class="index-content-con">
+        <!--目的地-->
+        <div class="items clearfix">
+            <strong class="title">目的地:</strong>
+
+            <div class="list clearfix listLest" id="list_f">
+                <a href="#">香港</a>
+                <a href="#">澳门</a>
+                <a href="#">台湾</a>
+                <a href="#">泰国</a>
+                <a href="#">日本</a>
+                <a href="#">法国</a>
+                <a href="#">意大利</a>
+                <a href="#">韩国</a>
+                <a href="#">马来西亚</a>
+                <a href="#">美国</a>
+                <a href="#">德国</a>
+                <a href="#">新加坡</a>
+                <a href="#">西班牙</a>
+                <a href="#">英国</a>
+                <a href="#">瑞士</a>
+                <a href="#">香港</a>
+                <a href="#">澳门</a>
+                <a href="#">台湾</a>
+                <a href="#">泰国</a>
+                <a href="#">日本</a>
+                <a href="#">法国</a>
+                <a href="#">意大利</a>
+                <a href="#">韩国</a>
+                <a href="#">马来西亚</a>
+                <a href="#">美国</a>
+                <a href="#">德国</a>
+                <a href="#">新加坡</a>
+                <a href="#">西班牙</a>
+                <a href="#">英国</a>
+                <a href="#">瑞士</a>
+                <a href="#">香港</a>
+                <a href="#">澳门</a>
+                <a href="#">台湾</a>
+                <a href="#">泰国</a>
+                <a href="#">日本</a>
+                <a href="#">法国</a>
+                <a href="#">意大利</a>
+                <a href="#">韩国</a>
+                <a href="#">马来西亚</a>
+                <a href="#">美国</a>
+                <a href="#">德国</a>
+                <a href="#">新加坡</a>
+                <a href="#">西班牙</a>
+                <a href="#">英国</a>
+                <a href="#">瑞士</a>
+            </div>
+            <div class="more" id="more_f"><a href="javascript:;">更多</a></div>
+        </div>
+        <div class="items clearfix">
+            <strong class="title">出行时间:</strong>
+
+            <div class="list clearfix listLest" id="list_t">
+                <a href="#">一月</a>
+                <a href="#">二月</a>
+                <a href="#">三月</a>
+                <a href="#">四月</a>
+                <a href="#">五月</a>
+                <a href="#">六月</a>
+                <a href="#">七月</a>
+                <a href="#">八月</a>
+                <a href="#">九月</a>
+                <a href="#">十月</a>
+                <a href="#">十一月</a>
+                <a href="#">十二月</a>
+                <a href="#">新年</a>
+                <a href="#">春节</a>
+                <a href="#">清明</a>
+                <a href="#">劳动节</a>
+                <a href="#">端午</a>
+                <a href="#">中秋</a>
+                <a href="#">国庆</a>
+            </div>
+            <div class="more" id="more_t"><a href="javascript:;">更多</a></div>
+        </div>
+        <div class="items clearfix">
+            <strong class="title">出行天数:</strong>
+
+            <div class="list clearfix">
+                <a href="#">3天及一下</a>
+                <a href="#">4天至7天</a>
+                <a href="#">8天至14天</a>
+                <a href="#">14天至20天</a>
+                <a href="#">20天以上</a>
+            </div>
+        </div>
+        <div class="items clearfix">
+            <strong class="title">出发城市:</strong>
+
+            <div class="list clearfix">
+                <a href="#">北京</a>
+                <a href="#">上海</a>
+                <a href="#">广州</a>
+                <a href="#">深圳</a>
+                <a href="#">重庆</a>
+                <a href="#">成都</a>
+                <a href="#">杭州</a>
+                <a href="#">香港</a>
+            </div>
+        </div>
+        <div class="items clearfix">
+            <strong class="title">行程主题:</strong>
+
+            <div class="list clearfix" style="display: block;" id="js_plan">
+                <a href="#">美食</a>
+                <a href="#">人文</a>
+                <a href="#">购物</a>
+                <a href="#">游园观光</a>
+                <a href="#">娱乐休闲</a>
+                <a href="#">沙滩海岛</a>
+                <a href="#">户外</a>
+                <a href="#">自然风光</a>
+                <a href="#">自驾</a>
+                <a href="#">蜜月</a>
+                <a href="#">亲子</a>
+            </div>
+            <div id="js_plan_more" class="list clearfix" style="display: none;">
+                <label data-key="1"><input type="checkbox">美食</label>
+                <label data-key="2"><input type="checkbox">人文</label>
+                <label data-key="3"><input type="checkbox">购物</label>
+                <label data-key="4"><input type="checkbox">游园观光</label>
+                <label data-key="5"><input type="checkbox">娱乐休闲</label>
+                <label data-key="6"><input type="checkbox">沙滩海岛</label>
+                <label data-key="7"><input type="checkbox">户外</label>
+                <label data-key="8"><input type="checkbox">自然风光</label>
+                <label data-key="9"><input type="checkbox">自驾</label>
+                <label data-key="10"><input type="checkbox">蜜月</label>
+                <label data-key="11"><input type="checkbox">亲子</label>
+            </div>
+            <div id="js_plan_subbtn" class="subbtn" style="display: none;">
+                <input type="button" class="ui_button js_cmd" id="selectBtn" value="确定">
+                <input type="button" class="ui_button_cancel js_cmd" id="select" value="取消">
+            </div>
+            <div class="more2" id="js_more"><a href="javascript:;">多选</a></div>
+        </div>
+        <div class="items noborder clearfix">
+            <strong class="title">精华等级:</strong>
+
+            <div class="list clearfix">
+                <a href="#">一级精华</a>
+                <a href="#">二级精华</a>
+                <a href="#">三级精华</a>
+            </div>
+        </div>
+    </div>
+    <!--行程列表-->
+    <div class="index-lists">
+        <div class="seting">
+            <div class="sort fl">
+                <a href="javascript://" class="current">默认排序</a>
+                <span>|</span>
+                <a href="javascript://" class="view">浏览次数最多</a>
+                <span>|</span>
+                <a href="javascript://" class="view">复制次数最多</a>
+            </div>
+            <div class="search">
+                <span>150个行程</span>
+                <input type="text" id="search_plan" value="" class="input" placeholder="在当前结果下搜索">
+            </div>
+        </div>
+        <!--行程列表-->
+        <div class="xc clearfix">
+            <div class="xc-list">
+                <!--行程内容-->
+                <div class="xc-items" id="img_big">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product7.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>8</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-12-30出发</dt>
+                                <dd>中国西藏路线</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>成都·西藏</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">44</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">sky-walker</a>
+                </div>
+                <div class="xc-items">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product5.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>15</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-12-30出发</dt>
+                                <dd>小丸子和小玉的英国17日游线路</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>上海·伦敦·约克·利物浦·巴斯·布里斯托·科茨沃尔德·牛津</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">49</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">爱吃水果的兔子</a>
+                </div>
+                <div class="xc-items">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product4.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>10</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-11-30出发</dt>
+                                <dd>XXLOVETOP的日本行程</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>重庆·东京·富士山·京都·奈良·大阪</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">11</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">sky-walker</a>
+                </div>
+                <div class="xc-items">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product3.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>8</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-12-30出发</dt>
+                                <dd>中国西藏路线</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>成都·西藏</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">44</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">sky-walker</a>
+                </div>
+                <div class="xc-items">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product2.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>8</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-12-30出发</dt>
+                                <dd>中国西藏路线</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>成都·西藏</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">44</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">sky-walker</a>
+                </div>
+                <div class="xc-items">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product1.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>15</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-12-30出发</dt>
+                                <dd>小丸子和小玉的英国17日游线路</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>上海·伦敦·约克·利物浦·巴斯·布里斯托·科茨沃尔德·牛津</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">49</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">爱吃水果的兔子</a>
+                </div>
+                <div class="xc-items">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product9.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>10</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-11-30出发</dt>
+                                <dd>XXLOVETOP的日本行程</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>重庆·东京·富士山·京都·奈良·大阪</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">11</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">sky-walker</a>
+                </div>
+                <div class="xc-items">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product8.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>15</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-12-30出发</dt>
+                                <dd>小丸子和小玉的英国17日游线路</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>上海·伦敦·约克·利物浦·巴斯·布里斯托·科茨沃尔德·牛津</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">49</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">爱吃水果的兔子</a>
+                </div>
+                <div class="xc-items">
+                    <a href="#" class="link">
+                        <div class="img">
+                            <img src="images/product6.jpg" alt=""/>
+                            <!--遮挡层-->
+                            <span class="bg"></span>
+                        </div>
+                        <div class="title clearfix">
+                            <div class="day">
+                                <strong>10</strong>天
+                            </div>
+                            <dl>
+                                <dt>2017-11-30出发</dt>
+                                <dd>XXLOVETOP的日本行程</dd>
+                            </dl>
+                        </div>
+                        <div class="content">
+                            <div class="plan">
+                                <p>重庆·东京·富士山·京都·奈良·大阪</p>
+                            </div>
+                            <div class="number">
+                                <span class="icon1">11</span>
+                                |
+                                <span class="icon2">0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="copy">复制</a>
+                    <a href="#" class="name">sky-walker</a>
+                </div>
+            </div>
+        </div>
+        <!--翻页-->
+        <div class="page clearfix">
+            <div class="ui-page fr" id="page">
+                <a href="javascript:;" class="ui-page-item ui-page-item-current">1</a>
+                <a href="javascript:;" class="ui-page-item">2</a>
+                <a href="javascript:;" class="ui-page-item">3</a>
+                <a href="javascript:;" class="ui-page-item">4</a>
+                <a href="javascript:;" class="ui-page-item">5</a>
+                <a href="javascript:;" class="ui-page-item">6</a>
+                <a href="javascript:;" class="ui-page-item">7</a>
+                <a href="javascript:;" class="ui-page-item">8</a>
+                <a href="javascript:;" class="ui-page-item">9</a>
+                <a href="javascript:;" class="ui-page-item">10</a>
+                <a href="javascript:;" class="ui-page-item">下一页</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--热门线路-->
+<div class="bot-list clearfix">
+    <dl>
+        <dt>热门国家线路</dt>
+        <dd><a href="#">泰国旅游路线</a></dd>
+        <dd><a href="#">日本旅游路线</a></dd>
+        <dd><a href="#">法国旅游路线</a></dd>
+        <dd><a href="#">意大利旅游路线</a></dd>
+        <dd><a href="#">韩国旅游路线</a></dd>
+        <dd><a href="#">马来西亚旅游路线</a></dd>
+        <dd><a href="#">美国旅游路线</a></dd>
+        <dd><a href="#">泰国旅游路线</a></dd>
+        <dd><a href="#">日本旅游路线</a></dd>
+        <dd><a href="#">法国旅游路线</a></dd>
+        <dd><a href="#">意大利旅游路线</a></dd>
+        <dd><a href="#">韩国旅游路线</a></dd>
+        <dd><a href="#">马来西亚旅游路线</a></dd>
+        <dd><a href="#">美国旅游路线</a></dd>
+        <dd><a href="#">泰国旅游路线</a></dd>
+        <dd><a href="#">日本旅游路线</a></dd>
+        <dd><a href="#">法国旅游路线</a></dd>
+        <dd><a href="#">意大利旅游路线</a></dd>
+        <dd><a href="#">韩国旅游路线</a></dd>
+        <dd><a href="#">马来西亚旅游路线</a></dd>
+        <dd><a href="#">美国旅游路线</a></dd>
+        <dd><a href="#">泰国旅游路线</a></dd>
+        <dd><a href="#">日本旅游路线</a></dd>
+        <dd><a href="#">法国旅游路线</a></dd>
+        <dd><a href="#">意大利旅游路线</a></dd>
+        <dd><a href="#">韩国旅游路线</a></dd>
+        <dd><a href="#">马来西亚旅游路线</a></dd>
+        <dd><a href="#">美国旅游路线</a></dd>
+        <dd><a href="#">瑞典旅游路线</a></dd>
+        <dd><a href="#">阿联酋旅游路线</a></dd>
+    </dl>
+    <dl>
+        <dt>热门主题线路</dt>
+        <dd><a href="#">美食旅游路线</a></dd>
+        <dd><a href="#">人文旅游路线</a></dd>
+        <dd><a href="#">购物旅游路线</a></dd>
+        <dd><a href="#">游园观光旅游路线</a></dd>
+        <dd><a href="#">沙滩海岛旅游路线</a></dd>
+        <dd><a href="#">自然风光旅游路线</a></dd>
+        <dd><a href="#">自驾旅游路线</a></dd>
+        <dd><a href="#">蜜月旅游路线</a></dd>
+        <dd><a href="#">亲自旅游路线</a></dd>
+    </dl>
+    <dl>
+        <dt>热门季节线路</dt>
+        <dd><a href="#">一月出发旅游线路</a></dd>
+        <dd><a href="#">二月出发旅游线路</a></dd>
+        <dd><a href="#">三月出发旅游线路</a></dd>
+        <dd><a href="#">四月出发旅游线路</a></dd>
+        <dd><a href="#">五月出发旅游线路</a></dd>
+        <dd><a href="#">六月出发旅游线路</a></dd>
+        <dd><a href="#">七月出发旅游线路</a></dd>
+        <dd><a href="#">八月出发旅游线路</a></dd>
+        <dd><a href="#">九月出发旅游线路</a></dd>
+        <dd><a href="#">十月出发旅游线路</a></dd>
+        <dd><a href="#">十一月出发旅游线路</a></dd>
+        <dd><a href="#">十二月出发旅游线路</a></dd>
+        <dd><a href="#">新年出发旅游线路</a></dd>
+        <dd><a href="#">春节出发旅游线路</a></dd>
+        <dd><a href="#">清明出发旅游线路</a></dd>
+        <dd><a href="#">劳动节出发旅游线路</a></dd>
+        <dd><a href="#">端午节出发旅游线路</a></dd>
+        <dd><a href="#">端午出发旅游线路</a></dd>
+        <dd><a href="#">中秋出发旅游线路</a></dd>
+        <dd><a href="#">国庆出发旅游线路</a></dd>
+    </dl>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="topline"></div>
+    <div class="content">
+        <p class="nav">
+            <a href="#">穷游介绍</a>
+            <a href="#">合作伙伴</a>
+            <a href="#">加入我们</a>
+            <a href="#">新手上路</a>
+            <a href="#">使用帮助</a>
+            <a href="#">网站地图</a>
+            <a href="#">会员条款</a>
+            <a href="#">社区指南</a>
+            <a href="#">版权声明</a>
+            <a href="#">免责声明</a>
+            <a href="#">联系我们</a>
+        </p>
+
+        <p class="info">
+            2004-2017 © 穷游网® qyer.com All rights reserved. Version v5.57 京ICP备12003524号 京公网安备11010102001935号
+            京ICP证140673号
+            <a href="#">营业执照</a>
+            <a href="#">经营许可证</a>
+        </p>
+    </div>
+</div>
+
+<script src="js/jquery-1.12.1.js"></script>
+<script src="js/jauery-travel.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/lanrenzhijia.js"></script>
+</body>
+</html>

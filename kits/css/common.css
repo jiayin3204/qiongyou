@@ -1,0 +1,52 @@
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,input,body,button,dd{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",\5b8b\4f53,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+li{
+    list-style: none;
+}
+input,img{
+    border: 0 none;
+}
+input{
+    outline: none;
+}
+img{
+    vertical-align: middle;
+}
+/*Çå³ý¸¡¶¯*/
+.clearFix:after{
+    height: 0;
+    clear: both;
+    content: '.';
+    display: block;
+    line-height: 0;
+    visibility: hidden;
+}
+.clearFix{
+    zoom: 1;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../iconfont/iconfont.woff') format('woff'),
+    url('../iconfont/iconfont.ttf') format('truetype'),
+    url('../iconfont/iconfont.svg#iconfont') format('svg');
+}

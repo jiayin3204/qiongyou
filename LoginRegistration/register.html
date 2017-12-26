@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/register.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/common.js"></script>
+    <script src="js/jquery-1.12.1.js"></script>
+
+</head>
+<body>
+<!--背景以及logo部分-->
+<div class="bg">
+    <div class="top">
+        <img src="images/login_logo2.41bd0a52.png" alt=""/>
+        <span>注册</span>
+    </div>
+    <!--注册框部分-->
+    <div class="center">
+        <div class="zhuce_sj">
+            <select>
+                <option>86</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <input type="text" placeholder="输入用于登录的手机号码" id="zhuce_in1"/>
+        </div>
+        <div class="zhuce_kb1">
+            <span id="zhuce_kb1_sp1"><i class="iconfont">&#xe586; </i>请输入正确的手机号码</span>
+        </div>
+        <div class="zhuce_tpyz">
+            <input type="text" placeholder="图片验证码" id="zhuce_in2"/>
+            <div class="zhuce_yzim">
+                <img style="cursor: pointer" src="images/captcha1.png" alt="" id="zhuce_yzim_im"/>
+            </div>
+        </div>
+        <div class="zhuce_kb2">
+            <span id="zhuce_kb1_sp2"><i class="iconfont">&#xe586; </i>请输入图片验证码</span>
+        </div>
+        <div class="zhuce_dxyz">
+            <input type="text" placeholder="输入短信中的验证码" class="zhuce_dxyz_in1"  id="zhuce_in3"/>
+            <input type="button" value="发送验证码" class="zhuce_dxyz_in2" id="zhuce_fsyz_in1"/>
+        </div>
+        <div class="zhuce_kb3">
+            <span id="zhuce_kb1_sp3"><i class="iconfont">&#xe586; </i>请输入短信中的验证码</span>
+        </div>
+        <div class="zhuce_username">
+            <input type="text" placeholder="起一个有辨识度的用户名"  id="zhuce_in4"/>
+        </div>
+        <div class="zhuce_kb4">
+            <span id="zhuce_kb1_sp4"><i class="iconfont">&#xe586; </i>请输入3-15位用户名</span>
+        </div>
+        <div class="zhuce_psd">
+            <input type="password" placeholder="输入8-16位密码,需包含字母及数字"  id="zhuce_in5"/>
+        </div>
+        <div class="zhuce_kb5">
+            <span id="zhuce_kb1_sp5"><i class="iconfont">&#xe586; </i>请输入正确的密码</span>
+        </div>
+        <div class="zhuce_btn">
+            <a id="zhuce_a1"><input type="button" value="注册" id="zhuce_z_in1"/></a>
+        </div>
+        <div class="zhuce_tip">
+            <span>已有穷游帐号？<a href="Login.html">登录</a></span>
+            <span>同意<a href="#">会员条款</a>和<a href="#">免责声明</a></span>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="w">
+        <div class="clearfix">
+            <ul class="footer_ul1">
+                <li class="footer_li1">关于我们</li>
+                <li><a href="#">穷游简介</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">合作伙伴</a></li>
+            </ul>
+            <ul>
+                <li class="footer_li1">加入穷游</li>
+                <li><a href="#">招聘职位</a></li>
+            </ul>
+            <ul>
+                <li class="footer_li1">网站条款</li>
+                <li><a href="#">会员条款</a></li>
+                <li><a href="#">社区指南</a></li>
+                <li><a href="#">版权声明</a></li>
+                <li><a href="#">免责声明</a></li>
+            </ul>
+            <ul>
+                <li class="footer_li1">帮助中心</li>
+                <li><a href="#">新手上路</a></li>
+                <li><a href="#">使用帮助</a></li>
+                <li><a href="#">网站地图</a></li>
+            </ul>
+            <ul class="foot_jlt">
+                <li class="footer_li1">关注我们</li>
+                <li class="foot_im1"><a href="#"><img src="images/headfoot2.99dfed4c.png" alt=""/></a></li>
+                <li class="foot_im2"><a href="#"><img src="images/headfoot2.99dfed4c.png" alt=""/></a></li>
+                <li class="foot_im3"><a href="#"><img src="images/headfoot2.99dfed4c.png" alt=""/></a></li>
+                <br/>
+                <li class="foot_im4"><a href="#"><img src="images/headfoot2.99dfed4c.png" alt=""/></a></li>
+                <li class="foot_im5"><a href="#"><img src="images/headfoot2.99dfed4c.png" alt=""/></a></li>
+                <li class="foot_im6"><a href="#"><img src="images/headfoot2.99dfed4c.png" alt=""/></a></li>
+            </ul>
+            <ul class="foot_ios">
+                <li><img src="images/headfoot2.99dfed4c.png" alt=""/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w">
+        <div class="footer_bd">
+            <img src="images/login_logo2.41bd0a52.png" alt=""/>
+            <p>2004-2017 © 穷游网™ qyer.com All rights reserved.  京ICP备12003524号  京公网安备11010502023470</p>
+            <span>穷游网为旅行者提供原创实用的出境游旅行指南和旅游攻略、旅行社区和问答交流平台，并提供签证、保险、机票、酒店预订、租车等服务。</span>
+        </div>
+    </div>
+</div>
+<script src="js/register.js"></script>
+<script src="js/notie.js"></script>
+<script>
+    function error2() {
+        notie.alert(2, '注册成功,正在跳转到登录页...', 3);
+    };
+    function error3() {
+        notie.alert(3, '您输入的信息有误,请检查后重新输入', 2);
+    };
+    function error4() {
+        notie.alert(1, '验证码已发送,请您注意查收', 2);
+    };
+    function error5() {
+        notie.alert(3, '您输入的手机号或验证码有误,请检查后重新输入', 2);
+    };
+    //注册按钮
+    $(function () {
+        $("#zhuce_z_in1").click(function () {
+            var valu = $("#zhuce_in1").val();
+            var valu2 = $("#zhuce_in2").val();
+            var valu3 = $("#zhuce_in3").val();
+            var valu4 = $("#zhuce_in4").val();
+            var valu5 = $("#zhuce_in5").val();
+            if(zze1.test(valu)&&zze2.test(valu2)&&zze3.test(valu3)&&zze4.test(valu4)&&zze5.test(valu5)){
+                error2();
+                $("#zhuce_kb1_sp1").css("display","none");
+                $("#zhuce_kb1_sp2").css("display","none");
+                $("#zhuce_kb1_sp3").css("display","none");
+                $("#zhuce_kb1_sp4").css("display","none");
+                $("#zhuce_kb1_sp5").css("display","none");
+                $("#zhuce_in1").css("borderColor","#a9a9a9");
+                $("#zhuce_in2").css("borderColor","#a9a9a9");
+                $("#zhuce_in3").css("borderColor","#a9a9a9");
+                $("#zhuce_in4").css("borderColor","#a9a9a9");
+                $("#zhuce_in5").css("borderColor","#a9a9a9");
+                adsq();
+
+
+            }else{
+                error3();
+                $("#zhuce_kb1_sp1").css("display","block");
+                $("#zhuce_kb1_sp2").css("display","block");
+                $("#zhuce_kb1_sp3").css("display","block");
+                $("#zhuce_kb1_sp4").css("display","block");
+                $("#zhuce_kb1_sp5").css("display","block");
+                $("#zhuce_in1").css("borderColor","red");
+                $("#zhuce_in2").css("borderColor","red");
+                $("#zhuce_in3").css("borderColor","red");
+                $("#zhuce_in4").css("borderColor","red");
+                $("#zhuce_in5").css("borderColor","red");
+            }
+        });
+
+        function adsq(){
+            var time=5;
+            var timeId = setInterval(function () {
+               time--;
+                if(time==0){
+                    clearInterval(timeId);
+//                    $("#zhuce_a1").attr({"href":"Login.html"});
+                    location.assign("Login.html");
+                    console.log(time);
+                }
+            },600);
+        };
+    });
+
+    //短信快捷登录栏发送验证码按钮
+    $(function () {
+        $("#zhuce_fsyz_in1").click(function () {
+            var valu = $("#zhuce_in1").val();
+            var valu2 = $("#zhuce_in2").val();
+            var valu3 = $("#zhuce_in3").val();
+            var valu4 = $("#zhuce_in4").val();
+            var valu5 = $("#zhuce_in5").val();
+            if(zze1.test(valu)&&zze2.test(valu2)){
+                error4();
+                tim();
+
+            }else{
+                $("#zhuce_kb1_sp1").css("display","block");
+                $("#zhuce_kb1_sp2").css("display","block");
+                $("#zhuce_in1").css("borderColor","red");
+                $("#zhuce_in2").css("borderColor","red");
+                $("#zhuce_kb1_sp3").css("display","none");
+                $("#zhuce_kb1_sp4").css("display","none");
+                $("#zhuce_kb1_sp5").css("display","none");
+                $("#zhuce_in3").css("borderColor","#a9a9a9");
+                $("#zhuce_in4").css("borderColor","#a9a9a9");
+                $("#zhuce_in5").css("borderColor","#a9a9a9");
+                error5();
+
+            }
+        });
+
+        function tim(){
+            var time = 60;
+            var timeId = setInterval(function(){
+                time--;
+                $("#zhuce_fsyz_in1").val("发送验证码("+time+")").css({"background":"#ccc"}).attr("disabled","disabled");
+                if(time<=0){
+                    clearInterval(timeId);
+                    //按钮可以被点击了
+                    $("#zhuce_fsyz_in1").css("background","#3f9f5f");
+                    $("#zhuce_fsyz_in1").val("发送验证码");
+                    $("#zhuce_fsyz_in1").removeAttr("disabled");
+                }
+            },1000);
+        };
+
+    });
+</script>
+<script src="js/notie.js"></script>
+</body>
+</html>

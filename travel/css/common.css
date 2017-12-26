@@ -1,0 +1,61 @@
+/*页面初始化*/
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,input,p,button,dd{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:  arial,mircosoft yahei;
+    color: #323232;
+    background: #fff;
+    text-align: left;
+}
+.w{
+    width: 980px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+em,i{
+    font-style: normal;
+}
+input,img,button{
+    border:0 none;
+}
+img{
+    vertical-align: middle;
+}
+input,button{
+    outline-style: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content:".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear:both;
+}
+.claerfix{
+    zoom:1;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot');
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../iconfont/iconfont.woff') format('woff'),
+  url('../iconfont/iconfont.ttf') format('truetype'),
+  url('../iconfont/iconfont.svg#iconfont') format('svg');
+}

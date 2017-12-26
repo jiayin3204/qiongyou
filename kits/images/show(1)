@@ -1,0 +1,1 @@
+adHandler({"namespace":"prod1","status":0,"msg":"ok","data":{"strategy":"AVG-DISTRIBUTION","content":{"zone_id":14,"ad_list":[]},"request_id":"dc9270ec5e027865cd69bd75664dab24890270cb"},"service_name":"hades","time":0})
